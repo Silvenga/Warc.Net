@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warc.Net", "src\Warc.Net\Warc.Net.csproj", "{CCA93E63-1BEB-41DC-BC7B-B519F7E812C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warc.Net.Tests", "tests\Warc.Net.Tests\Warc.Net.Tests.csproj", "{7C1EBB6F-50DB-4C6B-9627-F826B6FD1D4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCA93E63-1BEB-41DC-BC7B-B519F7E812C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA93E63-1BEB-41DC-BC7B-B519F7E812C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA93E63-1BEB-41DC-BC7B-B519F7E812C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA93E63-1BEB-41DC-BC7B-B519F7E812C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1EBB6F-50DB-4C6B-9627-F826B6FD1D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1EBB6F-50DB-4C6B-9627-F826B6FD1D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1EBB6F-50DB-4C6B-9627-F826B6FD1D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1EBB6F-50DB-4C6B-9627-F826B6FD1D4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {264CE60F-7D91-4F6D-ACB6-710F0381311D}
+	EndGlobalSection
+EndGlobal
