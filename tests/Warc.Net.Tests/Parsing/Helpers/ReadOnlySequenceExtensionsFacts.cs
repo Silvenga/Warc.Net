@@ -64,5 +64,18 @@ namespace Warc.Net.Tests.Parsing.Helpers
             // Assert
             result.Should().Be(inputStr);
         }
+
+        [Fact]
+        public void When_seq_does_contains_a_value_then_GetCharArray_should_return_array()
+        {
+            var inputStr = AutoFixture.Create<string>();
+            var inputFake = new ReadOnlySequence<byte>(Encoding.UTF8.GetBytes(inputStr));
+
+            // Act
+            var result = inputFake.GetCharArray();
+
+            // Assert
+            result.Should().BeEquivalentTo(inputStr.ToCharArray());
+        }
     }
 }

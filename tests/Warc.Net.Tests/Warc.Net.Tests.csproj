@@ -20,4 +20,12 @@
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include="Examples\*.warc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Warc.Net\Warc.Net.csproj" />
+  </ItemGroup>
+
 </Project>

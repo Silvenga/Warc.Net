@@ -61,5 +61,11 @@ namespace Warc.Net.Parsing.Helpers
                 }
             }
         }
+
+        public static char[] GetCharArray(this in ReadOnlySequence<byte> payload, Encoding? encoding = null)
+        {
+            encoding ??= Encoding.UTF8;
+            return encoding.GetChars(payload.ToArray());
+        }
     }
 }
