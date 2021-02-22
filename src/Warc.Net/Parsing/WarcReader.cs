@@ -55,6 +55,7 @@ namespace Warc.Net.Parsing
             var result = await pipeReader.ReadAsync(cancellationToken);
             while (!cancellationToken.IsCancellationRequested)
             {
+                // Buffer until we see the double break, meaning we have the header in the buffer.
                 var splitPosition = result.Buffer.PositionOfFirstDoubleBreak();
                 if (!splitPosition.HasValue)
                 {
@@ -63,13 +64,14 @@ namespace Warc.Net.Parsing
                 }
                 else
                 {
-                    // Break was found in buffer, split here.
+                    // Break was found in buffer, split here, and parse the header.
                     var headerBlock = result.Buffer.Slice(result.Buffer.Start, splitPosition.Value);
                     var header = ParseHeader(headerBlock);
 
-                    // Discard the header and prepare to read the payload.
+                    // Header parsed, discard and prepare to read the payload.
                     pipeReader.AdvanceTo(splitPosition.Value, result.Buffer.End);
 
+                    // Wait until payload has been fully buffered.
                     while (true)
                     {
                         result = await pipeReader.ReadAsync(cancellationToken);
@@ -81,22 +83,27 @@ namespace Warc.Net.Parsing
 
                         if (result.IsCompleted)
                         {
+                            // The pipeline has been completed, meaning no more data is coming.
+                            // If we are still waiting for data, then something went wrong.
                             throw new InvalidPayloadLengthDetectedException($"Expected a length of {header.PayloadLength} bytes "
                                                                             + $"but buffer contained only {result.Buffer.Length} remaining bytes. "
                                                                             + "This suggests the WARC record is malformed.");
                         }
 
+                        // TODO handle payload length too long.
+
                         pipeReader.AdvanceTo(result.Buffer.Start, result.Buffer.End);
                     }
 
+                    // Read the payload.
                     var payloadEnd = result.Buffer.GetPosition(header.PayloadLength);
                     var payloadData = result.Buffer.Slice(result.Buffer.Start, payloadEnd);
-
                     var payload = new WarcRecordPayload(payloadData.ToArray());
 
+                    // We have our record now.
                     yield return new WarcRecord(header, payload);
 
-                    // Seek past the double breaks at the end of the payload.
+                    // Seek past the double breaks at the end of the payload and discard.
                     var recordEnd = result.Buffer.GetPosition(4, payloadEnd);
                     pipeReader.AdvanceTo(recordEnd, result.Buffer.End);
                 }
