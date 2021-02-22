@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Warc.Net.Models
+﻿namespace Warc.Net.Models
 {
     public record WarcRecordPayload
     {

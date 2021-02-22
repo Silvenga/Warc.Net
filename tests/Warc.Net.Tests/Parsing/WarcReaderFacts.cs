@@ -48,7 +48,7 @@ namespace Warc.Net.Tests.Parsing
             result.Should().HaveCount(2);
         }
 
-        public async Task<List<T>> ToList<T>(IAsyncEnumerable<T> asyncEnumerable)
+        private async Task<List<T>> ToList<T>(IAsyncEnumerable<T> asyncEnumerable)
         {
             var list = new List<T>();
             await foreach (var e in asyncEnumerable)
@@ -59,7 +59,7 @@ namespace Warc.Net.Tests.Parsing
             return list;
         }
 
-        public static Stream CreateStreamFromString(string str)
+        private static Stream CreateStreamFromString(string str)
         {
             var memory = new MemoryStream();
             var reader = new StreamWriter(memory);
