@@ -18,20 +18,21 @@ namespace Warc.Net.Parsing.Helpers
         public static SequencePosition? PositionOfFirstDoubleBreak(this in ReadOnlySequence<byte> sequence)
         {
             var reader = new SequenceReader<byte>(sequence);
-            if (reader.TryAdvanceTo(DoubleBreak[0])
-                && reader.Remaining >= DoubleBreak.Count - 1)
+            while (reader.TryAdvanceTo(DoubleBreak[0])
+                   && reader.Remaining >= DoubleBreak.Count - 1)
             {
-                for (var i = 1; i < DoubleBreak.Count; i++)
+                var hit = true;
+                for (var i = 1; i < DoubleBreak.Count && hit; i++)
                 {
                     var nextDelimiter = DoubleBreak[i];
-                    if (!reader.TryRead(out var next)
-                        || nextDelimiter != next)
-                    {
-                        return null;
-                    }
+                    hit = reader.TryRead(out var next)
+                          && nextDelimiter == next;
                 }
 
-                return reader.Position;
+                if (hit)
+                {
+                    return reader.Position;
+                }
             }
 
             return null;

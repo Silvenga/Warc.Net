@@ -36,30 +36,30 @@ namespace Warc.Net.Parsing.Grammars
         // quoted-pair   = "\" CHAR ; single-character quoting
         // uri           = <'URI' per RFC3986>
 
-        public static Parser<char, WarcRecordHeader> WarcHeader => Map(
-                                                                       (version, fields) => new WarcRecordHeader(version, new List<NamedField>(fields)),
-                                                                       WarcVersion,
-                                                                       NamedFields
-                                                                   )
-                                                                   .Before(Crlf)
-                                                                   .Labelled(nameof(WarcHeader));
+        private static readonly Parser<char, string> FieldName = Token.AtLeastOnceString();
+        private static readonly Parser<char, string> FieldValue = Try(Sp.Or(Ht).Many()).Then(Text).ManyString();
 
-        public static Parser<char, Version> WarcVersion => CIString("WARC/").Then(Real)
-                                                                            .Map(x => Version.Parse(x.ToString(CultureInfo.InvariantCulture)))
-                                                                            .Before(Crlf)
-                                                                            .Labelled(nameof(WarcVersion));
+        public static readonly Parser<char, NamedField> NamedField = Map(
+                                                                         (name, value) => new NamedField(name, value),
+                                                                         FieldName.Before(Char(':')),
+                                                                         FieldValue
+                                                                     )
+                                                                     .Before(Crlf)
+                                                                     .Labelled(nameof(NamedField));
 
-        public static Parser<char, IEnumerable<NamedField>> NamedFields => NamedField.Many().Labelled(nameof(NamedFields));
+        public static readonly Parser<char, IEnumerable<NamedField>> NamedFields = NamedField.Many().Labelled(nameof(NamedFields));
 
-        public static Parser<char, NamedField> NamedField => Map(
-                                                                 (name, value) => new NamedField(name, value),
-                                                                 FieldName.Before(Char(':')),
-                                                                 FieldValue
-                                                             )
-                                                             .Before(Crlf)
-                                                             .Labelled(nameof(NamedField));
+        public static readonly Parser<char, Version> WarcVersion = CIString("WARC/").Then(Real)
+                                                                                    .Map(x => Version.Parse(x.ToString(CultureInfo.InvariantCulture)))
+                                                                                    .Before(Crlf)
+                                                                                    .Labelled(nameof(WarcVersion));
 
-        private static Parser<char, string> FieldName => Token.AtLeastOnceString();
-        private static Parser<char, string> FieldValue => Try(Sp.Or(Ht).Many()).Then(Text).ManyString();
+        public static readonly Parser<char, WarcRecordHeader> WarcHeader = Map(
+                                                                               (version, fields) => new WarcRecordHeader(version, new List<NamedField>(fields)),
+                                                                               WarcVersion,
+                                                                               NamedFields
+                                                                           )
+                                                                           .Before(Crlf)
+                                                                           .Labelled(nameof(WarcHeader));
     }
 }

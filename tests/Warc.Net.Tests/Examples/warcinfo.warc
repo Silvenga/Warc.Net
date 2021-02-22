@@ -3,7 +3,7 @@ WARC-Type: warcinfo
 WARC-Date: 2006-09-19T17:20:14Z
 WARC-Record-ID: <urn:uuid:d7ae5c10-e6b3-4d27-967d-34780c58ba39>
 Content-Type: application/warc-fields
-Content-Length: 381
+Content-Length: 422
 
 software: Heritrix 1.12.0 http://crawler.archive.org
 hostname: crawling017.archive.org

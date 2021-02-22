@@ -48,8 +48,21 @@ namespace Warc.Net.Tests.Parsing.Helpers
             var result = inputFake.PositionOfFirstDoubleBreak();
 
             // Assert
-            // ReSharper disable once PossibleInvalidOperationException
             result.HasValue.Should().BeFalse();
+        }
+
+        [Fact]
+        public void When_seq_contains_multiple_breaks_then_PositionOfFirstDoubleBreak_should_return_first_double_break()
+        {
+            const string inputStr = "foo\r\nbar\r\n\r\ndoo";
+            var inputFake = new ReadOnlySequence<byte>(Encoding.UTF8.GetBytes(inputStr));
+
+            // Act
+            var result = inputFake.PositionOfFirstDoubleBreak();
+
+            // Assert
+            // ReSharper disable once PossibleInvalidOperationException
+            inputFake.Slice(result.Value).GetString().Should().Be("doo");
         }
 
         [Fact]
