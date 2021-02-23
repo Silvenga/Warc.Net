@@ -16,13 +16,11 @@ namespace Warc.Net.Tests.Parsing
             var inputStr = Example.Get("warcinfo.warc");
 
             var reader = new WarcReader();
-            await reader.Accept(new[]
-            {
-                CreateStreamFromString(inputStr)
-            });
+            await reader.WriteAsync(CreateStreamFromString(inputStr));
+            await reader.CompleteWriting();
 
             // Act
-            var result = await ToList(reader.ReadAsync());
+            var result = await ToList(reader.ReadAllAsync());
 
             // Assert
             result.Should().HaveCount(1);
@@ -35,20 +33,21 @@ namespace Warc.Net.Tests.Parsing
             var inputStr2 = Example.Get("warcinfo.warc");
 
             var reader = new WarcReader();
-            await reader.Accept(new[]
+            await reader.WriteAllAsync(new[]
             {
                 CreateStreamFromString(inputStr1),
                 CreateStreamFromString(inputStr2),
             });
+            await reader.CompleteWriting();
 
             // Act
-            var result = await ToList(reader.ReadAsync());
+            var result = await ToList(reader.ReadAllAsync());
 
             // Assert
             result.Should().HaveCount(2);
         }
 
-        private async Task<List<T>> ToList<T>(IAsyncEnumerable<T> asyncEnumerable)
+        private static async Task<List<T>> ToList<T>(IAsyncEnumerable<T> asyncEnumerable)
         {
             var list = new List<T>();
             await foreach (var e in asyncEnumerable)

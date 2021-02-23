@@ -17,7 +17,7 @@ namespace Warc.Net.Parsing
     {
         private readonly Pipe _pipe = new();
 
-        public async Task Accept(IEnumerable<Stream> streams, CancellationToken cancellationToken = default, bool leaveOpen = false)
+        public async Task WriteAllAsync(IEnumerable<Stream> streams, CancellationToken cancellationToken = default, bool leaveOpen = false)
         {
             var pipeWriter = _pipe.Writer;
             using var streamGenerator = streams.GetEnumerator();
@@ -44,77 +44,108 @@ namespace Warc.Net.Parsing
                 }
             } while (!cancellationToken.IsCancellationRequested
                      && streamGenerator.MoveNext());
-
-            await pipeWriter.CompleteAsync();
         }
 
-        public async IAsyncEnumerable<WarcRecord> ReadAsync([EnumeratorCancellation] CancellationToken cancellationToken = default)
+        public async Task WriteAsync(Stream stream, CancellationToken cancellationToken = default, bool leaveOpen = false)
         {
-            var pipeReader = _pipe.Reader;
+            try
+            {
+                await stream.CopyToAsync(_pipe.Writer, cancellationToken);
+            }
+            finally
+            {
+                if (!leaveOpen)
+                {
+                    await stream.DisposeAsync();
+                }
+            }
+        }
 
-            var result = await pipeReader.ReadAsync(cancellationToken);
+        public async Task CompleteWriting()
+        {
+            await _pipe.Writer.CompleteAsync();
+        }
+
+        public async IAsyncEnumerable<WarcRecord> ReadAllAsync([EnumeratorCancellation] CancellationToken cancellationToken = default)
+        {
             while (!cancellationToken.IsCancellationRequested)
             {
-                // Buffer until we see the double break, meaning we have the header in the buffer.
-                var splitPosition = result.Buffer.PositionOfFirstDoubleBreak();
-                if (!splitPosition.HasValue)
+                var record = await ReadNextAsync(cancellationToken);
+                if (record != null)
                 {
-                    // Break does not exist in buffer, keep reading into the buffer.
-                    pipeReader.AdvanceTo(result.Buffer.Start, result.Buffer.End);
+                    yield return record;
                 }
                 else
-                {
-                    // Break was found in buffer, split here, and parse the header.
-                    var headerBlock = result.Buffer.Slice(result.Buffer.Start, splitPosition.Value);
-                    var header = ParseHeader(headerBlock);
-
-                    // Header parsed, discard and prepare to read the payload.
-                    pipeReader.AdvanceTo(splitPosition.Value, result.Buffer.End);
-
-                    // Wait until payload has been fully buffered.
-                    while (true)
-                    {
-                        result = await pipeReader.ReadAsync(cancellationToken);
-
-                        if (result.Buffer.Length >= header.PayloadLength)
-                        {
-                            break;
-                        }
-
-                        if (result.IsCompleted)
-                        {
-                            // The pipeline has been completed, meaning no more data is coming.
-                            // If we are still waiting for data, then something went wrong.
-                            throw new InvalidPayloadLengthDetectedException($"Expected a length of {header.PayloadLength} bytes "
-                                                                            + $"but buffer contained only {result.Buffer.Length} remaining bytes. "
-                                                                            + "This suggests the WARC record is malformed.");
-                        }
-
-                        // TODO handle payload length too long.
-
-                        pipeReader.AdvanceTo(result.Buffer.Start, result.Buffer.End);
-                    }
-
-                    // Read the payload.
-                    var payloadEnd = result.Buffer.GetPosition(header.PayloadLength);
-                    var payloadData = result.Buffer.Slice(result.Buffer.Start, payloadEnd);
-                    var payload = new WarcRecordPayload(payloadData.ToArray());
-
-                    // We have our record now.
-                    yield return new WarcRecord(header, payload);
-
-                    // Seek past the double breaks at the end of the payload and discard.
-                    var recordEnd = result.Buffer.GetPosition(4, payloadEnd);
-                    pipeReader.AdvanceTo(recordEnd, result.Buffer.End);
-                }
-
-                result = await pipeReader.ReadAsync(cancellationToken);
-
-                if (result.IsCompleted && result.Buffer.IsEmpty)
                 {
                     yield break;
                 }
             }
+        }
+
+        public async Task<WarcRecord?> ReadNextAsync(CancellationToken cancellationToken = default)
+        {
+            var pipeReader = _pipe.Reader;
+
+            var result = await pipeReader.ReadAsync(cancellationToken);
+            if (result.IsCompleted && result.Buffer.IsEmpty)
+            {
+                return null;
+            }
+
+            // Buffer until we see the double break, meaning we have the header in the buffer.
+            var splitPosition = result.Buffer.PositionOfFirstDoubleBreak();
+            while (!splitPosition.HasValue)
+            {
+                // Break does not exist in buffer, keep reading into the buffer.
+                pipeReader.AdvanceTo(result.Buffer.Start, result.Buffer.End);
+                result = await pipeReader.ReadAsync(cancellationToken);
+
+                splitPosition = result.Buffer.PositionOfFirstDoubleBreak();
+            }
+
+            // Break was found in buffer, split here, and parse the header.
+            var headerBlock = result.Buffer.Slice(result.Buffer.Start, splitPosition.Value);
+            var header = ParseHeader(headerBlock);
+
+            // Header parsed, discard and prepare to read the payload.
+            pipeReader.AdvanceTo(splitPosition.Value, result.Buffer.End);
+
+            // Wait until payload has been fully buffered.
+            // TODO Add support to write directly to another stream rather then buffering.
+            while (true)
+            {
+                result = await pipeReader.ReadAsync(cancellationToken);
+
+                if (result.Buffer.Length >= header.PayloadLength)
+                {
+                    break;
+                }
+
+                if (result.IsCompleted)
+                {
+                    // The pipeline has been completed, meaning no more data is coming.
+                    // If we are still waiting for data, then something went wrong.
+                    throw new InvalidPayloadLengthDetectedException($"Expected a length of {header.PayloadLength} bytes "
+                                                                    + $"but buffer contained only {result.Buffer.Length} remaining bytes. "
+                                                                    + "This suggests the WARC record is malformed.");
+                }
+
+                // TODO handle payload length too long.
+
+                pipeReader.AdvanceTo(result.Buffer.Start, result.Buffer.End);
+            }
+
+            // Read the payload.
+            var payloadEnd = result.Buffer.GetPosition(header.PayloadLength);
+            var payloadData = result.Buffer.Slice(result.Buffer.Start, payloadEnd);
+            var payload = new WarcRecordPayload(payloadData.ToArray());
+
+            // Seek past the double breaks at the end of the payload and discard.
+            var recordEnd = result.Buffer.GetPosition(4, payloadEnd);
+            pipeReader.AdvanceTo(recordEnd, result.Buffer.End);
+
+            // We have our record now.
+            return new WarcRecord(header, payload);
         }
 
         private static WarcRecordHeader ParseHeader(in ReadOnlySequence<byte> headerSequence)
