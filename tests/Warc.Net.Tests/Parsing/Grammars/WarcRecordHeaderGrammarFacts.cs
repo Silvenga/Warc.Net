@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using FluentAssertions;
 using Pidgin;
 using Warc.Net.Models;
@@ -13,7 +14,7 @@ namespace Warc.Net.Tests.Parsing.Grammars
         [Fact]
         public void Can_parse_example_header()
         {
-            var input = Example.Get("warcinfo.warc");
+            var input = new StreamReader(Example.Get("warcinfo.warc")).ReadToEnd();
 
             // Act
             var result = WarcRecordHeaderGrammar.WarcHeader.Parse(input);
@@ -31,7 +32,7 @@ namespace Warc.Net.Tests.Parsing.Grammars
             var result = WarcRecordHeaderGrammar.WarcVersion.ParseOrThrow(input);
 
             // Assert
-            result.Should().Be(Version.Parse("1.1"));
+            result.Should().Be("1.1");
         }
 
         [Fact]

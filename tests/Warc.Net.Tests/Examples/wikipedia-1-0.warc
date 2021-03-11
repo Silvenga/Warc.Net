@@ -1,0 +1,2023 @@
+WARC/1.0
+WARC-Type: warcinfo
+Content-Type: application/warc-fields
+WARC-Date: 2021-02-23T01:08:23Z
+WARC-Record-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Filename: wikipedia-1-0.warc.gz
+WARC-Block-Digest: sha1:U523ISW3XKA5DJYAOBPDBWQQL3WI5DIM
+Content-Length: 288
+
+software: Wget/1.20.3 (linux-gnu)
+format: WARC File Format 1.0
+conformsTo: http://bibnum.bnf.fr/WARC/WARC_ISO_28500_version1_latestdraft.pdf
+robots: classic
+wget-arguments: "https://en.wikipedia.org/wiki/Web_ARChive" "--warc-file=wikipedia-1-0" "--page-requisites" "--span-hosts" 
+
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://en.wikipedia.org/wiki/Web_ARChive>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2021-02-23T01:08:23Z
+WARC-Record-ID: <urn:uuid:feed0e0a-251c-4849-830d-f87a0e355e1d>
+WARC-IP-Address: 208.80.153.224
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Block-Digest: sha1:63H4ZH3GMQ5LKCYC73G7BOXHVNGXEOPY
+Content-Length: 159
+
+GET /wiki/Web_ARChive HTTP/1.1
+User-Agent: Wget/1.20.3 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: en.wikipedia.org
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:8f87645d-dc80-46c6-84c1-35213116c62a>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:feed0e0a-251c-4849-830d-f87a0e355e1d>
+WARC-Target-URI: <https://en.wikipedia.org/wiki/Web_ARChive>
+WARC-Date: 2021-02-23T01:08:23Z
+WARC-IP-Address: 208.80.153.224
+WARC-Block-Digest: sha1:W2YMRMN5ISGSB7LVIJ5SXM5NECPGF2J2
+WARC-Payload-Digest: sha1:2TMFKCSTPYK7FVKX5HN6YMGLNHHOXQUM
+Content-Type: application/http;msgtype=response
+Content-Length: 42171
+
+HTTP/1.1 200 OK
+Date: Tue, 23 Feb 2021 00:43:42 GMT
+Server: mw1326.eqiad.wmnet
+X-Content-Type-Options: nosniff
+P3p: CP="See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P for more info."
+Content-Language: en
+Vary: Accept-Encoding,Cookie,Authorization
+X-Request-Id: YDRPvrSmZSbCWGeeuRVp0wAAAAg
+Last-Modified: Tue, 09 Feb 2021 00:43:42 GMT
+Content-Type: text/html; charset=UTF-8
+Age: 1483
+X-Cache: cp2029 miss, cp2037 hit/1
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+NEL: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+Set-Cookie: WMF-Last-Access=23-Feb-2021;Path=/;HttpOnly;secure;Expires=Sat, 27 Mar 2021 00:00:00 GMT
+Set-Cookie: WMF-Last-Access-Global=23-Feb-2021;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Sat, 27 Mar 2021 00:00:00 GMT
+X-Client-IP: 70.39.116.210
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate
+Set-Cookie: GeoIP=US:::37.75:-97.82:v4; Path=/; secure; Domain=.wikipedia.org
+Accept-Ranges: bytes
+Content-Length: 40795
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Web ARChive - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"YDRPvrSmZSbCWGeeuRVp0wAAAAg","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Web_ARChive","wgTitle":"Web ARChive","wgCurRevisionId":998822494,"wgRevisionId":998822494,"wgArticleId":27732344,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All stub articles","Archive formats","Web archiving","Web Archives","World Wide Web stubs"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Web_ARChive","wgRelevantArticleId":27732344,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgPopupsConflictsWithRefTooltipsGadget":!0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0,"wgULSPosition":"interlanguage","wgWikibaseItemId":"Q7978505"};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges"
+:"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.36.0-wmf.31"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Web_ARChive"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Web_ARChive&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Web_ARChive&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Web_ARChive"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Web_ARChive rootpage-Web_ARChive skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >Web ARChive</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <a href="/wiki/ARC_(file_format)" title="ARC (file format)">ARC (file format)</a> or <a href="/wiki/Webarchive" title="Webarchive">webarchive</a>.</div>
+<div role="note" class="hatnote navigation-not-searchable">For other uses, see <a href="/wiki/Web_archive_(disambiguation)" class="mw-disambig" title="Web archive (disambiguation)">Web archive (disambiguation)</a>.</div>
+<table class="infobox" style="width:22em"><caption style="font-size:130%; padding-bottom:0.15em;">Web ARChive</caption><tbody><tr><th scope="row" style="line-height:1.2em; padding-right:0.65em;"><a href="/wiki/Filename_extension" title="Filename extension">Filename extension</a></th><td style="line-height:1.35em;"><style data-mw-deduplicate="TemplateStyles:r886049734">.mw-parser-output .monospaced{font-family:monospace,monospace}</style><div class="monospaced">
+.warc</div></td></tr><tr><th scope="row" style="line-height:1.2em; padding-right:0.65em;"><a href="/wiki/Media_type" title="Media type">Internet media&#160;type</a></th><td style="line-height:1.35em;"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><div class="monospaced">
+application/warc<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup></div></td></tr><tr><th scope="row" style="line-height:1.2em; padding-right:0.65em;">Extended&#160;from</th><td style="line-height:1.35em;">ARC<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup></td></tr><tr><th scope="row" style="line-height:1.2em; padding-right:0.65em;"><a href="/wiki/International_standard" title="International standard">Standard</a></th><td style="line-height:1.35em;">ISO 28500:2017<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup></td></tr><tr><th scope="row" style="line-height:1.2em; padding-right:0.65em;"><span class="nowrap"><a href="/wiki/Open_format" title="Open format">Open format</a>?</span></th><td style="line-height:1.35em;">Yes</td></tr><tr><th scope="row" style="line-height:1.2em; padding-right:0.65em;">Website</th><td style="line-height:1.35em;"><span class="url"><a rel="nofollow" class="external text" href="https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/">iipc<wbr />.github<wbr />.io<wbr />/warc-specifications<wbr />/specifications<wbr />/warc-format<wbr />/warc-1<wbr />.1<wbr />/</a></span></td></tr></tbody></table>
+<p>The <b>Web ARChive</b> (WARC) <a href="/wiki/Archive_format" class="mw-redirect" title="Archive format">archive format</a> specifies a method for combining multiple digital resources into an aggregate <a href="/wiki/Archive_file" title="Archive file">archive file</a> together with related information. The WARC format is a revision of the <a href="/wiki/Internet_Archive" title="Internet Archive">Internet Archive</a>'s ARC_IA File Format<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> that has traditionally been used to store "<a href="/wiki/Web_crawler" title="Web crawler">web crawls</a>" as sequences of content blocks harvested from the <a href="/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a>. The WARC format generalizes the older format to better support the harvesting, access, and exchange needs of archiving organizations. Besides the primary content currently recorded, the revision accommodates related secondary content, such as assigned <a href="/wiki/Metadata" title="Metadata">metadata</a>, abbreviated duplicate detection events, and later-date transformations.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> The WARC format is inspired by HTTP/1.0 streams, with a similar header and the use of CRLFs as delimiters, making it very conducive to crawler implementations.
+</p><p>WARC is now recognised by most <a href="/wiki/National_library" title="National library">national library</a> systems as the standard to follow for web archiving.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Software">Software</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Web_ARChive&amp;action=edit&amp;section=1" title="Edit section: Software">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Heritrix" title="Heritrix"> Heritrix web archiver</a> in <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/Wget" title="Wget">wget</a> (since version 1.14<sup id="cite_ref-FSF2012_7-0" class="reference"><a href="#cite_note-FSF2012-7">&#91;7&#93;</a></sup>)</li>
+<li><a href="/wiki/Webrecorder" class="mw-redirect" title="Webrecorder">Webrecorder</a></li>
+<li><a href="/wiki/StormCrawler" title="StormCrawler">StormCrawler</a></li>
+<li><a href="/wiki/Apache_Nutch" title="Apache Nutch">Apache Nutch</a></li>
+<li><a href="/wiki/Libarchive" class="mw-redirect" title="Libarchive">libarchive</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Web_ARChive&amp;action=edit&amp;section=2" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r999302996">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/#warc-file-name-size-and-compression">"application/warc"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">17 March</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=application%2Fwarc&amp;rft_id=https%3A%2F%2Fiipc.github.io%2Fwarc-specifications%2Fspecifications%2Fwarc-format%2Fwarc-1.1%2F%23warc-file-name-size-and-compression&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWeb+ARChive" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://archive-access.sourceforge.net/warc/warc_file_format-0.16.html#anchor1">"Introduction"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">5 March</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Introduction&amp;rft_id=http%3A%2F%2Farchive-access.sourceforge.net%2Fwarc%2Fwarc_file_format-0.16.html%23anchor1&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWeb+ARChive" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.iso.org/standard/68004.html">"Information and documentation -- WARC file format"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">16 March</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Information+and+documentation+--+WARC+file+format&amp;rft_id=https%3A%2F%2Fwww.iso.org%2Fstandard%2F68004.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWeb+ARChive" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.digitalpreservation.gov/formats/fdd/fdd000235.shtml">"ARC_IA, Internet Archive ARC file format"</a>. <i>www.digitalpreservation.gov</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-05-09</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.digitalpreservation.gov&amp;rft.atitle=ARC_IA%2C+Internet+Archive+ARC+file+format&amp;rft_id=http%3A%2F%2Fwww.digitalpreservation.gov%2Fformats%2Ffdd%2Ffdd000235.shtml&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWeb+ARChive" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.digitalpreservation.gov/formats/fdd/fdd000236.shtml">"WARC, Web ARChive file format"</a>. <i>www.digitalpreservation.gov</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-05-09</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.digitalpreservation.gov&amp;rft.atitle=WARC%2C+Web+ARChive+file+format&amp;rft_id=http%3A%2F%2Fwww.digitalpreservation.gov%2Fformats%2Ffdd%2Ffdd000236.shtml&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWeb+ARChive" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://digitalia.sbn.it/article/view/1473">http://digitalia.sbn.it/article/view/1473</a></span>
+</li>
+<li id="cite_note-FSF2012-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-FSF2012_7-0">^</a></b></span> <span class="reference-text">
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFScrivano2012" class="citation web cs1">Scrivano, Giuseppe (August 6, 2012). <a rel="nofollow" class="external text" href="https://lists.gnu.org/archive/html/info-gnu/2012-08/msg00002.html">"GNU wget 1.14 released"</a>. <i>GNU wget 1.14 released</i>. Free Software Foundation, Inc<span class="reference-accessdate">. Retrieved <span class="nowrap">February 25,</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GNU+wget+1.14+released&amp;rft.atitle=GNU+wget+1.14+released&amp;rft.date=2012-08-06&amp;rft.aulast=Scrivano&amp;rft.aufirst=Giuseppe&amp;rft_id=https%3A%2F%2Flists.gnu.org%2Farchive%2Fhtml%2Finfo-gnu%2F2012-08%2Fmsg00002.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWeb+ARChive" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Web_ARChive&amp;action=edit&amp;section=3" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external free" href="http://archive-access.sourceforge.net/warc/">http://archive-access.sourceforge.net/warc/</a></li>
+<li><a rel="nofollow" class="external free" href="http://bibnum.bnf.fr/WARC/">http://bibnum.bnf.fr/WARC/</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.digitalpreservation.gov/formats/fdd/fdd000236.shtml">http://www.digitalpreservation.gov/formats/fdd/fdd000236.shtml</a></li>
+<li><a rel="nofollow" class="external free" href="https://netpreserve.org/resources/WARC_Guidelines_v1.pdf">https://netpreserve.org/resources/WARC_Guidelines_v1.pdf</a></li>
+<li><a rel="nofollow" class="external free" href="https://iipc.github.io/warc-specifications/">https://iipc.github.io/warc-specifications/</a></li>
+<li><a rel="nofollow" class="external free" href="http://crawler.archive.org/articles/developer_manual/arcs.html">http://crawler.archive.org/articles/developer_manual/arcs.html</a></li></ul>
+<table class="metadata plainlinks stub" role="presentation" style="background:transparent"><tbody><tr class="noresize"><td><a href="/wiki/File:Crystal_Clear_app_browser.png" class="image"><img alt="Stub icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/30px-Crystal_Clear_app_browser.png" decoding="async" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/45px-Crystal_Clear_app_browser.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/60px-Crystal_Clear_app_browser.png 2x" data-file-width="128" data-file-height="128" /></a></td><td><i>This <a href="/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a>â€“related article is a <a href="/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Web_ARChive&amp;action=edit">expanding it</a>.</i><style data-mw-deduplicate="TemplateStyles:r992953826">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}.mw-parser-output .infobox .navbar{font-size:100%}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style><div class="navbar plainlinks hlist navbar-mini" style="position: absolute; right: 15px; display: none;"><ul><li class="nv-view"><a href="/wiki/Template:Web-stub" title="Template:Web-stub"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Web-stub" title="Template talk:Web-stub"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Web-stub&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mw1413
+Cached time: 20210130193310
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [varyâ€revisionâ€sha1]
+CPU time usage: 0.220 seconds
+Real time usage: 0.311 seconds
+Preprocessor visited node count: 712/1000000
+Postâ€expand include size: 17555/2097152 bytes
+Template argument size: 817/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip postâ€expand size: 19369/5000000 bytes
+Lua time usage: 0.126/10.000 seconds
+Lua memory usage: 4023265/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  287.920      1 -total
+ 50.86%  146.449      1 Template:Reflist
+ 46.44%  133.705      6 Template:Cite_web
+ 25.99%   74.831      1 Template:Infobox_file_format
+ 22.02%   63.401      1 Template:Infobox
+ 10.68%   30.741      1 Template:Distinguish
+  9.60%   27.627      1 Template:Web-stub
+  8.59%   24.740      1 Template:Asbox
+  5.40%   15.547      1 Template:Url
+  4.90%   14.111      2 Template:Monodiv
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:27732344-0!canonical and timestamp 20210130193310 and revision id 998822494. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Web_ARChive&amp;oldid=998822494">https://en.wikipedia.org/w/index.php?title=Web_ARChive&amp;oldid=998822494</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Archive_formats" title="Category:Archive formats">Archive formats</a></li><li><a href="/wiki/Category:Web_archiving" title="Category:Web archiving">Web archiving</a></li><li><a href="/wiki/Category:Web_Archives" title="Category:Web Archives">Web Archives</a></li><li><a href="/wiki/Category:World_Wide_Web_stubs" title="Category:World Wide Web stubs">World Wide Web stubs</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_stub_articles" title="Category:All stub articles">All stub articles</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" class="vector-menu-heading">
+		<span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Web+ARChive" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Web+ARChive" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" class="vector-menu-heading">
+		<span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected"><a href="/wiki/Web_ARChive" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk"><a href="/wiki/Talk:Web_ARChive" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li></ul>
+		
+	</div>
+</nav>
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" class="vector-menu-heading">
+		<span>Variants</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" class="vector-menu-heading">
+		<span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected"><a href="/wiki/Web_ARChive">Read</a></li><li id="ca-edit"><a href="/w/index.php?title=Web_ARChive&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history"><a href="/w/index.php?title=Web_ARChive&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" class="vector-menu-heading">
+		<span>More</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" >
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="/w/index.php" id="searchform">
+		<div id="simpleSearch" data-search-loc="header-navigation">
+			<input type="search" name="search" placeholder="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" name="title" value="Special:Search"/>
+			<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" class="vector-menu-heading">
+		<span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Articles related to current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x">Random article</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">About Wikipedia</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact us</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">Donate</a></li></ul>
+		
+	</div>
+</nav>
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<h3 id="p-interaction-label" class="vector-menu-heading">
+		<span>Contribute</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-introduction"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">Learn to edit</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r">Recent changes</a></li><li id="n-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia">Upload file</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" class="vector-menu-heading">
+		<span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Web_ARChive" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Web_ARChive" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Web_ARChive&amp;oldid=998822494" title="Permanent link to this revision of this page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Web_ARChive&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Web_ARChive&amp;id=998822494&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q7978505" title="Structured data on this page hosted by Wikidata [g]" accesskey="g">Wikidata item</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<h3 id="p-coll-print_export-label" class="vector-menu-heading">
+		<span>Print/export</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Web_ARChive&amp;action=show-download-screen" title="Download this page as a PDF file">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Web_ARChive&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</nav>
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<h3 id="p-lang-label" class="vector-menu-heading">
+		<span>Languages</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Web_ARChive" title="Web ARChive â€“ German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q7978505#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+	<li id="footer-info-lastmod"> This page was last edited on 7 January 2021, at 05:36<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. WikipediaÂ® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places" >
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Web_ARChive&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+	<div style="clear: both;"></div>
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.220","walltime":"0.311","ppvisitednodes":{"value":712,"limit":1000000},"postexpandincludesize":{"value":17555,"limit":2097152},"templateargumentsize":{"value":817,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":19369,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  287.920      1 -total"," 50.86%  146.449      1 Template:Reflist"," 46.44%  133.705      6 Template:Cite_web"," 25.99%   74.831      1 Template:Infobox_file_format"," 22.02%   63.401      1 Template:Infobox"," 10.68%   30.741      1 Template:Distinguish","  9.60%   27.627      1 Template:Web-stub","  8.59%   24.740      1 Template:Asbox","  5.40%   15.547      1 Template:Url","  4.90%   14.111      2 Template:Monodiv"]},"scribunto":{"limitreport-timeusage":{"value":"0.126","limit":"10.000"},"limitreport-memusage":{"value":4023265,"limit":52428800}},"cachereport":{"origin":"mw1413","timestamp":"20210130193310","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Web ARChive","url":"https:\/\/en.wikipedia.org\/wiki\/Web_ARChive","sameAs":"http:\/\/www.wikidata.org\/entity\/Q7978505","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q7978505","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2010-06-16T18:04:15Z","dateModified":"2021-01-07T05:36:31Z","headline":"file format that specifies a method for combining multiple digital resources into an aggregate archival file together with related information"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":178,"wgHostname":"mw1326"});});</script>
+</body></html>
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://en.wikipedia.org/robots.txt>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2021-02-23T01:08:24Z
+WARC-Record-ID: <urn:uuid:58714d14-fbd9-44bb-95ac-a100b61fd9dd>
+WARC-IP-Address: 208.80.153.224
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Block-Digest: sha1:NJ5BFLV7ZYKRMIPWENHSW6XK4NR6P6LA
+Content-Length: 254
+
+GET /robots.txt HTTP/1.1
+User-Agent: Wget/1.20.3 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: en.wikipedia.org
+Connection: Keep-Alive
+Cookie: WMF-Last-Access=23-Feb-2021; GeoIP=US:::37.75:-97.82:v4; WMF-Last-Access-Global=23-Feb-2021
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:cd492e49-1e7b-442a-a51c-394f7434ccda>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:58714d14-fbd9-44bb-95ac-a100b61fd9dd>
+WARC-Target-URI: <https://en.wikipedia.org/robots.txt>
+WARC-Date: 2021-02-23T01:08:24Z
+WARC-IP-Address: 208.80.153.224
+WARC-Block-Digest: sha1:TQPVHSKBPGXAWD4MSX6NHYFDQNQIRGL2
+WARC-Payload-Digest: sha1:2EV6SSWFBC4LMWETIUOYHOCXXS2ZCK5B
+Content-Type: application/http;msgtype=response
+Content-Length: 28551
+
+HTTP/1.1 200 OK
+Date: Tue, 23 Feb 2021 00:59:44 GMT
+Cache-Control: s-maxage=3600, must-revalidate, max-age=0
+Vary: X-Subdomain
+Server: ATS/8.0.8
+X-Content-Type-Options: nosniff
+X-Article-Id: 19292575
+X-Language: en
+X-Site: wikipedia
+X-Request-Id: YCJF7ApAMMMAApstrLUAAABN
+Last-Modified: Sat, 12 Sep 2020 11:16:08 GMT
+Content-Type: text/plain; charset=utf-8
+Age: 520
+X-Cache: cp2033 hit, cp2037 hit/1
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+NEL: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+X-Client-IP: 70.39.116.210
+Accept-Ranges: bytes
+Content-Length: 27583
+Connection: keep-alive
+
+ï»¿# robots.txt for http://www.wikipedia.org/ and friends
+#
+# Please note: There are a lot of pages on this site, and there are
+# some misbehaved spiders out there that go _way_ too fast. If you're
+# irresponsible, your access to the site may be blocked.
+#
+
+# Observed spamming large amounts of https://en.wikipedia.org/?curid=NNNNNN
+# and ignoring 429 ratelimit responses, claims to respect robots:
+# http://mj12bot.com/
+User-agent: MJ12bot
+Disallow: /
+
+# advertising-related bots:
+User-agent: Mediapartners-Google*
+Disallow: /
+
+# Wikipedia work bots:
+User-agent: IsraBot
+Disallow:
+
+User-agent: Orthogaffe
+Disallow:
+
+# Crawlers that are kind enough to obey, but which we'd rather not have
+# unless they're feeding search engines.
+User-agent: UbiCrawler
+Disallow: /
+
+User-agent: DOC
+Disallow: /
+
+User-agent: Zao
+Disallow: /
+
+# Some bots are known to be trouble, particularly those designed to copy
+# entire sites. Please obey robots.txt.
+User-agent: sitecheck.internetseer.com
+Disallow: /
+
+User-agent: Zealbot
+Disallow: /
+
+User-agent: MSIECrawler
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: Fetch
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: linko
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Microsoft.URL.Control
+Disallow: /
+
+User-agent: Xenu
+Disallow: /
+
+User-agent: larbin
+Disallow: /
+
+User-agent: libwww
+Disallow: /
+
+User-agent: ZyBORG
+Disallow: /
+
+User-agent: Download Ninja
+Disallow: /
+
+# Misbehaving: requests much too fast:
+User-agent: fast
+Disallow: /
+
+#
+# Sorry, wget in its recursive mode is a frequent problem.
+# Please read the man page and use it properly; there is a
+# --wait option you can use to set the delay between hits,
+# for instance.
+#
+User-agent: wget
+Disallow: /
+
+#
+# The 'grub' distributed client has been *very* poorly behaved.
+#
+User-agent: grub-client
+Disallow: /
+
+#
+# Doesn't follow robots.txt anyway, but...
+#
+User-agent: k2spider
+Disallow: /
+
+#
+# Hits many times per second, not acceptable
+# http://www.nameprotect.com/botinfo.html
+User-agent: NPBot
+Disallow: /
+
+# A capture bot, downloads gazillions of pages with no public benefit
+# http://www.webreaper.net/
+User-agent: WebReaper
+Disallow: /
+
+
+#
+# Friendly, low-speed bots are welcome viewing article pages, but not
+# dynamically-generated pages please.
+#
+# Inktomi's "Slurp" can read a minimum delay between hits; if your
+# bot supports such a thing using the 'Crawl-delay' or another
+# instruction, please let us know.
+#
+# There is a special exception for API mobileview to allow dynamic
+# mobile web & app views to load section content.
+# These views aren't HTTP-cached but use parser cache aggressively
+# and don't expose special: pages etc.
+#
+# Another exception is for REST API documentation, located at
+# /api/rest_v1/?doc.
+#
+User-agent: *
+Allow: /w/api.php?action=mobileview&
+Allow: /w/load.php?
+Allow: /api/rest_v1/?doc
+Disallow: /w/
+Disallow: /api/
+Disallow: /trap/
+Disallow: /wiki/Special:
+Disallow: /wiki/Spezial:
+Disallow: /wiki/Spesial:
+Disallow: /wiki/Special%3A
+Disallow: /wiki/Spezial%3A
+Disallow: /wiki/Spesial%3A
+
+#
+# ar:
+Disallow: /wiki/%D8%AE%D8%A7%D8%B5:Search
+Disallow: /wiki/%D8%AE%D8%A7%D8%B5%3ASearch
+#
+# dewiki:
+# T6937
+# sensible deletion and meta user discussion pages:
+Disallow: /wiki/Wikipedia:L%C3%B6schkandidaten/
+Disallow: /wiki/Wikipedia:LÃ¶schkandidaten/
+Disallow: /wiki/Wikipedia:Vandalensperrung/
+Disallow: /wiki/Wikipedia:Benutzersperrung/
+Disallow: /wiki/Wikipedia:Vermittlungsausschuss/
+Disallow: /wiki/Wikipedia:Administratoren/Probleme/
+Disallow: /wiki/Wikipedia:Adminkandidaturen/
+Disallow: /wiki/Wikipedia:QualitÃ¤tssicherung/
+Disallow: /wiki/Wikipedia:Qualit%C3%A4tssicherung/
+# 4937#5
+Disallow: /wiki/Wikipedia:Vandalismusmeldung/
+Disallow: /wiki/Wikipedia:Gesperrte_Lemmata/
+Disallow: /wiki/Wikipedia:LÃ¶schprÃ¼fung/
+Disallow: /wiki/Wikipedia:L%C3%B6schprÃ¼fung/
+Disallow: /wiki/Wikipedia:Administratoren/Notizen/
+Disallow: /wiki/Wikipedia:Schiedsgericht/Anfragen/
+Disallow: /wiki/Wikipedia:L%C3%B6schpr%C3%BCfung/
+# T14111
+Disallow: /wiki/Wikipedia:Checkuser/
+Disallow: /wiki/Wikipedia_Diskussion:Checkuser/
+Disallow: /wiki/Wikipedia_Diskussion:Adminkandidaturen/
+# T15961
+Disallow: /wiki/Wikipedia:Spam-Blacklist-Log
+Disallow: /wiki/Wikipedia%3ASpam-Blacklist-Log
+Disallow: /wiki/Wikipedia_Diskussion:Spam-Blacklist-Log
+Disallow: /wiki/Wikipedia_Diskussion%3ASpam-Blacklist-Log
+#
+# enwiki:
+# Folks get annoyed when VfD discussions end up the number 1 google hit for
+# their name. See T6776
+Disallow: /wiki/Wikipedia:Articles_for_deletion/
+Disallow: /wiki/Wikipedia%3AArticles_for_deletion/
+Disallow: /wiki/Wikipedia:Votes_for_deletion/
+Disallow: /wiki/Wikipedia%3AVotes_for_deletion/
+Disallow: /wiki/Wikipedia:Pages_for_deletion/
+Disallow: /wiki/Wikipedia%3APages_for_deletion/
+Disallow: /wiki/Wikipedia:Miscellany_for_deletion/
+Disallow: /wiki/Wikipedia%3AMiscellany_for_deletion/
+Disallow: /wiki/Wikipedia:Miscellaneous_deletion/
+Disallow: /wiki/Wikipedia%3AMiscellaneous_deletion/
+Disallow: /wiki/Wikipedia:Copyright_problems
+Disallow: /wiki/Wikipedia%3ACopyright_problems
+Disallow: /wiki/Wikipedia:Protected_titles/
+Disallow: /wiki/Wikipedia%3AProtected_titles/
+# T15398
+Disallow: /wiki/Wikipedia:WikiProject_Spam/
+Disallow: /wiki/Wikipedia%3AWikiProject_Spam/
+# T16075
+Disallow: /wiki/MediaWiki:Spam-blacklist
+Disallow: /wiki/MediaWiki%3ASpam-blacklist
+Disallow: /wiki/MediaWiki_talk:Spam-blacklist
+Disallow: /wiki/MediaWiki_talk%3ASpam-blacklist
+# T13261
+Disallow: /wiki/Wikipedia:Requests_for_arbitration/
+Disallow: /wiki/Wikipedia%3ARequests_for_arbitration/
+Disallow: /wiki/Wikipedia:Requests_for_comment/
+Disallow: /wiki/Wikipedia%3ARequests_for_comment/
+Disallow: /wiki/Wikipedia:Requests_for_adminship/
+Disallow: /wiki/Wikipedia%3ARequests_for_adminship/
+# T12288
+Disallow: /wiki/Wikipedia_talk:Articles_for_deletion/
+Disallow: /wiki/Wikipedia_talk%3AArticles_for_deletion/
+Disallow: /wiki/Wikipedia_talk:Votes_for_deletion/
+Disallow: /wiki/Wikipedia_talk%3AVotes_for_deletion/
+Disallow: /wiki/Wikipedia_talk:Pages_for_deletion/
+Disallow: /wiki/Wikipedia_talk%3APages_for_deletion/
+Disallow: /wiki/Wikipedia_talk:Miscellany_for_deletion/
+Disallow: /wiki/Wikipedia_talk%3AMiscellany_for_deletion/
+Disallow: /wiki/Wikipedia_talk:Miscellaneous_deletion/
+Disallow: /wiki/Wikipedia_talk%3AMiscellaneous_deletion/
+# T16793
+Disallow: /wiki/Wikipedia:Changing_username
+Disallow: /wiki/Wikipedia%3AChanging_username
+Disallow: /wiki/Wikipedia:Changing_username/
+Disallow: /wiki/Wikipedia%3AChanging_username/
+Disallow: /wiki/Wikipedia_talk:Changing_username
+Disallow: /wiki/Wikipedia_talk%3AChanging_username
+Disallow: /wiki/Wikipedia_talk:Changing_username/
+Disallow: /wiki/Wikipedia_talk%3AChanging_username/
+#
+# eswiki:
+# T8746
+Disallow: /wiki/Wikipedia:Consultas_de_borrado/
+Disallow: /wiki/Wikipedia%3AConsultas_de_borrado/
+#
+# fiwiki:
+# T10695
+Disallow: /wiki/Wikipedia:Poistettavat_sivut
+Disallow: /wiki/K%C3%A4ytt%C3%A4j%C3%A4:
+Disallow: /wiki/KÃ¤yttÃ¤jÃ¤:
+Disallow: /wiki/Keskustelu_k%C3%A4ytt%C3%A4j%C3%A4st%C3%A4:
+Disallow: /wiki/Keskustelu_kÃ¤yttÃ¤jÃ¤stÃ¤:
+Disallow: /wiki/Wikipedia:Yll%C3%A4pit%C3%A4j%C3%A4t/
+Disallow: /wiki/Wikipedia:YllÃ¤pitÃ¤jÃ¤t/
+#
+# hewiki:
+Disallow: /wiki/%D7%9E%D7%99%D7%95%D7%97%D7%93:Search
+Disallow: /wiki/%D7%9E%D7%99%D7%95%D7%97%D7%93%3ASearch
+#T11517
+Disallow: /wiki/×•×™×§×™×¤×“×™×”:×¨×©×™××ª_××•×¢××“×™×_×œ××—×™×§×”/
+Disallow: /wiki/×•×™×§×™×¤×“×™×”%3A×¨×©×™××ª_××•×¢××“×™×_×œ××—×™×§×”/
+Disallow: /wiki/%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94:%D7%A8%D7%A9%D7%99%D7%9E%D7%AA_%D7%9E%D7%95%D7%A2%D7%9E%D7%93%D7%99%D7%9D_%D7%9C%D7%9E%D7%97%D7%99%D7%A7%D7%94/
+Disallow: /wiki/%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94%3A%D7%A8%D7%A9%D7%99%D7%9E%D7%AA_%D7%9E%D7%95%D7%A2%D7%9E%D7%93%D7%99%D7%9D_%D7%9C%D7%9E%D7%97%D7%99%D7%A7%D7%94/
+Disallow: /wiki/×•×™×§×™×¤×“×™×”:×¢×¨×›×™×_×œ×_×§×™×™××™×_×•××•×’× ×™×
+Disallow: /wiki/×•×™×§×™×¤×“×™×”%3A×¢×¨×›×™×_×œ×_×§×™×™××™×_×•××•×’× ×™×
+Disallow: /wiki/%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94:%D7%A2%D7%A8%D7%9B%D7%99%D7%9D_%D7%9C%D7%90_%D7%A7%D7%99%D7%99%D7%9E%D7%99%D7%9D_%D7%95%D7%9E%D7%95%D7%92%D7%A0%D7%99%D7%9D
+Disallow: /wiki/%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94%3A%D7%A2%D7%A8%D7%9B%D7%99%D7%9D_%D7%9C%D7%90_%D7%A7%D7%99%D7%99%D7%9E%D7%99%D7%9D_%D7%95%D7%9E%D7%95%D7%92%D7%A0%D7%99%D7%9D
+Disallow: /wiki/×•×™×§×™×¤×“×™×”:×“×¤×™×_×œ×_×§×™×™××™×_×•××•×’× ×™×
+Disallow: /wiki/×•×™×§×™×¤×“×™×”%3A×“×¤×™×_×œ×_×§×™×™××™×_×•××•×’× ×™×
+Disallow: /wiki/%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94:%D7%93%D7%A4%D7%99%D7%9D_%D7%9C%D7%90_%D7%A7%D7%99%D7%99%D7%9E%D7%99%D7%9D_%D7%95%D7%9E%D7%95%D7%92%D7%A0%D7%99%D7%9D
+Disallow: /wiki/%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94%3A%D7%93%D7%A4%D7%99%D7%9D_%D7%9C%D7%90_%D7%A7%D7%99%D7%99%D7%9E%D7%99%D7%9D_%D7%95%D7%9E%D7%95%D7%92%D7%A0%D7%99%D7%9D
+#
+# huwiki:
+Disallow: /wiki/Speci%C3%A1lis:Search
+Disallow: /wiki/Speci%C3%A1lis%3ASearch
+#
+# itwiki:
+# T7545
+Disallow: /wiki/Wikipedia:Pagine_da_cancellare
+Disallow: /wiki/Wikipedia%3APagine_da_cancellare
+Disallow: /wiki/Wikipedia:Utenti_problematici
+Disallow: /wiki/Wikipedia%3AUtenti_problematici
+Disallow: /wiki/Wikipedia:Vandalismi_in_corso
+Disallow: /wiki/Wikipedia%3AVandalismi_in_corso
+Disallow: /wiki/Wikipedia:Amministratori
+Disallow: /wiki/Wikipedia%3AAmministratori
+Disallow: /wiki/Wikipedia:Proposte_di_cancellazione_semplificata
+Disallow: /wiki/Wikipedia%3AProposte_di_cancellazione_semplificata
+Disallow: /wiki/Categoria:Da_cancellare_subito
+Disallow: /wiki/Categoria%3ADa_cancellare_subito
+Disallow: /wiki/Wikipedia:Sospette_violazioni_di_copyright
+Disallow: /wiki/Wikipedia%3ASospette_violazioni_di_copyright
+Disallow: /wiki/Categoria:Da_controllare_per_copyright
+Disallow: /wiki/Categoria%3ADa_controllare_per_copyright
+Disallow: /wiki/Progetto:Rimozione_contributi_sospetti
+Disallow: /wiki/Progetto%3ARimozione_contributi_sospetti
+Disallow: /wiki/Categoria:Da_cancellare_subito_per_violazione_integrale_copyright
+Disallow: /wiki/Categoria%3ADa_cancellare_subito_per_violazione_integrale_copyright
+Disallow: /wiki/Progetto:Cococo
+Disallow: /wiki/Progetto%3ACococo
+Disallow: /wiki/Discussioni_progetto:Cococo
+Disallow: /wiki/Discussioni_progetto%3ACococo
+#
+# jawiki
+Disallow: /wiki/%E7%89%B9%E5%88%A5:Search
+Disallow: /wiki/%E7%89%B9%E5%88%A5%3ASearch
+# T7239
+Disallow: /wiki/Wikipedia:%E5%89%8A%E9%99%A4%E4%BE%9D%E9%A0%BC/
+Disallow: /wiki/Wikipedia%3A%E5%89%8A%E9%99%A4%E4%BE%9D%E9%A0%BC/
+Disallow: /wiki/Wikipedia:%E5%88%A9%E7%94%A8%E8%80%85%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E5%89%8A%E9%99%A4%E4%BE%9D%E9%A0%BC
+Disallow: /wiki/Wikipedia%3A%E5%88%A9%E7%94%A8%E8%80%85%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E5%89%8A%E9%99%A4%E4%BE%9D%E9%A0%BC
+# nowiki
+# T13432
+Disallow: /wiki/Bruker:
+Disallow: /wiki/Bruker%3A
+Disallow: /wiki/Brukerdiskusjon
+Disallow: /wiki/Wikipedia:Administratorer
+Disallow: /wiki/Wikipedia%3AAdministratorer
+Disallow: /wiki/Wikipedia-diskusjon:Administratorer
+Disallow: /wiki/Wikipedia-diskusjon%3AAdministratorer
+Disallow: /wiki/Wikipedia:Sletting
+Disallow: /wiki/Wikipedia%3ASletting
+Disallow: /wiki/Wikipedia-diskusjon:Sletting
+Disallow: /wiki/Wikipedia-diskusjon%3ASletting
+#
+# plwiki
+# T10067
+Disallow: /wiki/Wikipedia:Strony_do_usuni%C4%99cia
+Disallow: /wiki/Wikipedia%3AStrony_do_usuni%C4%99cia
+Disallow: /wiki/Wikipedia:Do_usuni%C4%99cia
+Disallow: /wiki/Wikipedia%3ADo_usuni%C4%99cia
+Disallow: /wiki/Wikipedia:SDU/
+Disallow: /wiki/Wikipedia%3ASDU/
+Disallow: /wiki/Wikipedia:Strony_podejrzane_o_naruszenie_praw_autorskich
+Disallow: /wiki/Wikipedia%3AStrony_podejrzane_o_naruszenie_praw_autorskich
+#
+# ptwiki:
+# T7394
+Disallow: /wiki/Wikipedia:PÃ¡ginas_para_eliminar/
+Disallow: /wiki/Wikipedia:P%C3%A1ginas_para_eliminar/
+Disallow: /wiki/Wikipedia%3AP%C3%A1ginas_para_eliminar/
+Disallow: /wiki/Wikipedia_DiscussÃ£o:PÃ¡ginas_para_eliminar/
+Disallow: /wiki/Wikipedia_Discuss%C3%A3o:P%C3%A1ginas_para_eliminar/
+Disallow: /wiki/Wikipedia_Discuss%C3%A3o%3AP%C3%A1ginas_para_eliminar/
+#
+# rowiki:
+# T14546
+Disallow: /wiki/Wikipedia:Pagini_de_%C5%9Fters
+Disallow: /wiki/Wikipedia%3APagini_de_%C5%9Fters
+Disallow: /wiki/Discu%C5%A3ie_Wikipedia:Pagini_de_%C5%9Fters
+Disallow: /wiki/Discu%C5%A3ie_Wikipedia%3APagini_de_%C5%9Fters
+#
+# ruwiki:
+Disallow: /wiki/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5:Search
+Disallow: /wiki/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%3ASearch
+#
+# svwiki:
+# T12229
+Disallow: /wiki/Wikipedia%3ASidor_f%C3%B6reslagna_f%C3%B6r_radering
+Disallow: /wiki/Wikipedia:Sidor_f%C3%B6reslagna_f%C3%B6r_radering
+Disallow: /wiki/Wikipedia:Sidor_fÃ¶reslagna_fÃ¶r_radering
+Disallow: /wiki/AnvÃ¤ndare
+Disallow: /wiki/Anv%C3%A4ndare
+Disallow: /wiki/AnvÃ¤ndardiskussion
+Disallow: /wiki/Anv%C3%A4ndardiskussion
+Disallow: /wiki/Wikipedia:Skyddade_sidnamn
+Disallow: /wiki/Wikipedia%3ASkyddade_sidnamn
+# T13291
+Disallow: /wiki/Wikipedia:Sidor_som_bÃ¶r_raderas
+Disallow: /wiki/Wikipedia:Sidor_som_b%C3%B6r_raderas
+Disallow: /wiki/Wikipedia%3ASidor_som_b%C3%B6r_raderas
+#
+# zhwiki:
+# T7104
+Disallow: /wiki/Wikipedia:åˆ é™¤æŠ•ç¥¨/ä¾µæƒ
+Disallow: /wiki/Wikipedia:%E5%88%A0%E9%99%A4%E6%8A%95%E7%A5%A8/%E4%BE%B5%E6%9D%83
+Disallow: /wiki/Wikipedia:åˆ é™¤æŠ•ç¥¨å’Œè¯·æ±‚
+Disallow: /wiki/Wikipedia:%E5%88%A0%E9%99%A4%E6%8A%95%E7%A5%A8%E5%92%8C%E8%AF%B7%E6%B1%82
+Disallow: /wiki/Category:å¿«é€Ÿåˆ é™¤å€™é€‰
+Disallow: /wiki/Category:%E5%BF%AB%E9%80%9F%E5%88%A0%E9%99%A4%E5%80%99%E9%80%89
+Disallow: /wiki/Category:ç»´åŸºç™¾ç§‘éœ€è¦ç¿»è¯‘çš„æ–‡ç« 
+Disallow: /wiki/Category:%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E9%9C%80%E8%A6%81%E7%BF%BB%E8%AF%91%E7%9A%84%E6%96%87%E7%AB%A0
+#
+# sister projects
+#
+# enwikinews:
+# T7340
+Disallow: /wiki/Portal:Prepared_stories/
+Disallow: /wiki/Portal%3APrepared_stories/
+#
+# itwikinews
+# T11138
+Disallow: /wiki/Wikinotizie:Richieste_di_cancellazione
+Disallow: /wiki/Wikinotizie:Sospette_violazioni_di_copyright
+Disallow: /wiki/Categoria:Da_cancellare_subito
+Disallow: /wiki/Categoria:Da_cancellare_subito_per_violazione_integrale_copyright
+Disallow: /wiki/Wikinotizie:Storie_in_preparazione
+#
+# enwikiquote:
+# T17095
+Disallow: /wiki/Wikiquote:Votes_for_deletion/
+Disallow: /wiki/Wikiquote%3AVotes_for_deletion/
+Disallow: /wiki/Wikiquote_talk:Votes_for_deletion/
+Disallow: /wiki/Wikiquote_talk%3AVotes_for_deletion/
+Disallow: /wiki/Wikiquote:Votes_for_deletion_archive/
+Disallow: /wiki/Wikiquote%3AVotes_for_deletion_archive/
+Disallow: /wiki/Wikiquote_talk:Votes_for_deletion_archive/
+Disallow: /wiki/Wikiquote_talk%3AVotes_for_deletion_archive/
+#
+# enwikibooks
+Disallow: /wiki/Wikibooks:Votes_for_deletion
+#
+# working...
+Disallow: /wiki/Fundraising_2007/comments
+#
+#
+#
+#----------------------------------------------------------#
+#
+#
+#
+ # <!-- Please do not remove the space at the start of this line, it breaks the rendering.  http://www.robotstxt.org/orig.html says spaces before comments are OK. --><pre>
+#
+# Localisable part of robots.txt for en.wikipedia.org
+#
+# Edit at https://en.wikipedia.org/w/index.php?title=MediaWiki:Robots.txt&action=edit
+# Don't add newlines here. All rules set here are active for every user-agent.
+#
+# Please check any changes using a syntax validator such as http://tool.motoricerca.info/robots-checker.phtml
+# Enter https://en.wikipedia.org/robots.txt as the URL to check.
+#
+# https://phabricator.wikimedia.org/T16075
+Disallow: /wiki/MediaWiki:Spam-blacklist
+Disallow: /wiki/MediaWiki%3ASpam-blacklist
+Disallow: /wiki/MediaWiki_talk:Spam-blacklist
+Disallow: /wiki/MediaWiki_talk%3ASpam-blacklist
+Disallow: /wiki/Wikipedia:WikiProject_Spam
+Disallow: /wiki/Wikipedia_talk:WikiProject_Spam
+#
+# Folks get annoyed when XfD discussions end up the number 1 google hit for
+# their name. 
+# https://phabricator.wikimedia.org/T16075
+Disallow: /wiki/Wikipedia:Articles_for_deletion
+Disallow: /wiki/Wikipedia%3AArticles_for_deletion
+Disallow: /wiki/Wikipedia:Votes_for_deletion
+Disallow: /wiki/Wikipedia%3AVotes_for_deletion
+Disallow: /wiki/Wikipedia:Pages_for_deletion
+Disallow: /wiki/Wikipedia%3APages_for_deletion
+Disallow: /wiki/Wikipedia:Miscellany_for_deletion
+Disallow: /wiki/Wikipedia%3AMiscellany_for_deletion
+Disallow: /wiki/Wikipedia:Miscellaneous_deletion
+Disallow: /wiki/Wikipedia%3AMiscellaneous_deletion
+Disallow: /wiki/Wikipedia:Categories_for_discussion
+Disallow: /wiki/Wikipedia%3ACategories_for_discussion
+Disallow: /wiki/Wikipedia:Templates_for_deletion
+Disallow: /wiki/Wikipedia%3ATemplates_for_deletion
+Disallow: /wiki/Wikipedia:Redirects_for_discussion
+Disallow: /wiki/Wikipedia%3ARedirects_for_discussion
+Disallow: /wiki/Wikipedia:Deletion_review
+Disallow: /wiki/Wikipedia%3ADeletion_review
+Disallow: /wiki/Wikipedia:WikiProject_Deletion_sorting
+Disallow: /wiki/Wikipedia%3AWikiProject_Deletion_sorting
+Disallow: /wiki/Wikipedia:Files_for_deletion
+Disallow: /wiki/Wikipedia%3AFiles_for_deletion
+Disallow: /wiki/Wikipedia:Files_for_discussion
+Disallow: /wiki/Wikipedia%3AFiles_for_discussion
+Disallow: /wiki/Wikipedia:Possibly_unfree_files
+Disallow: /wiki/Wikipedia%3APossibly_unfree_files
+#
+# https://phabricator.wikimedia.org/T12288
+Disallow: /wiki/Wikipedia_talk:Articles_for_deletion
+Disallow: /wiki/Wikipedia_talk%3AArticles_for_deletion
+Disallow: /wiki/Wikipedia_talk:Votes_for_deletion
+Disallow: /wiki/Wikipedia_talk%3AVotes_for_deletion
+Disallow: /wiki/Wikipedia_talk:Pages_for_deletion
+Disallow: /wiki/Wikipedia_talk%3APages_for_deletion
+Disallow: /wiki/Wikipedia_talk:Miscellany_for_deletion
+Disallow: /wiki/Wikipedia_talk%3AMiscellany_for_deletion
+Disallow: /wiki/Wikipedia_talk:Miscellaneous_deletion
+Disallow: /wiki/Wikipedia_talk%3AMiscellaneous_deletion
+Disallow: /wiki/Wikipedia_talk:Templates_for_deletion
+Disallow: /wiki/Wikipedia_talk%3ATemplates_for_deletion
+Disallow: /wiki/Wikipedia_talk:Categories_for_discussion
+Disallow: /wiki/Wikipedia_talk%3ACategories_for_discussion
+Disallow: /wiki/Wikipedia_talk:Deletion_review
+Disallow: /wiki/Wikipedia_talk%3ADeletion_review
+Disallow: /wiki/Wikipedia_talk:WikiProject_Deletion_sorting
+Disallow: /wiki/Wikipedia_talk%3AWikiProject_Deletion_sorting
+Disallow: /wiki/Wikipedia_talk:Files_for_deletion
+Disallow: /wiki/Wikipedia_talk%3AFiles_for_deletion
+Disallow: /wiki/Wikipedia_talk:Files_for_discussion
+Disallow: /wiki/Wikipedia_talk%3AFiles_for_discussion
+Disallow: /wiki/Wikipedia_talk:Possibly_unfree_files
+Disallow: /wiki/Wikipedia_talk%3APossibly_unfree_files
+#
+Disallow: /wiki/Wikipedia:Copyright_problems
+Disallow: /wiki/Wikipedia%3ACopyright_problems
+Disallow: /wiki/Wikipedia_talk:Copyright_problems
+Disallow: /wiki/Wikipedia_talk%3ACopyright_problems
+Disallow: /wiki/Wikipedia:Suspected_copyright_violations
+Disallow: /wiki/Wikipedia%3ASuspected_copyright_violations
+Disallow: /wiki/Wikipedia_talk:Suspected_copyright_violations
+Disallow: /wiki/Wikipedia_talk%3ASuspected_copyright_violations
+Disallow: /wiki/Wikipedia:Contributor_copyright_investigations
+Disallow: /wiki/Wikipedia%3AContributor_copyright_investigations
+Disallow: /wiki/Wikipedia:Contributor_copyright_investigations
+Disallow: /wiki/Wikipedia%3AContributor_copyright_investigations
+Disallow: /wiki/Wikipedia_talk:Contributor_copyright_investigations
+Disallow: /wiki/Wikipedia_talk%3AContributor_copyright_investigations
+Disallow: /wiki/Wikipedia_talk:Contributor_copyright_investigations
+Disallow: /wiki/Wikipedia_talk%3AContributor_copyright_investigations
+Disallow: /wiki/Wikipedia:Protected_titles
+Disallow: /wiki/Wikipedia%3AProtected_titles
+Disallow: /wiki/Wikipedia_talk:Protected_titles
+Disallow: /wiki/Wikipedia_talk%3AProtected_titles
+Disallow: /wiki/Wikipedia:Articles_for_creation
+Disallow: /wiki/Wikipedia%3AArticles_for_creation
+Disallow: /wiki/Wikipedia_talk:Articles_for_creation
+Disallow: /wiki/Wikipedia_talk%3AArticles_for_creation
+Disallow: /wiki/Wikipedia_talk:Article_wizard
+Disallow: /wiki/Wikipedia_talk%3AArticle_wizard
+#
+# https://phabricator.wikimedia.org/T13261
+Disallow: /wiki/Wikipedia:Requests_for_arbitration
+Disallow: /wiki/Wikipedia%3ARequests_for_arbitration
+Disallow: /wiki/Wikipedia_talk:Requests_for_arbitration
+Disallow: /wiki/Wikipedia_talk%3ARequests_for_arbitration
+Disallow: /wiki/Wikipedia:Requests_for_comment
+Disallow: /wiki/Wikipedia%3ARequests_for_comment
+Disallow: /wiki/Wikipedia_talk:Requests_for_comment
+Disallow: /wiki/Wikipedia_talk%3ARequests_for_comment
+Disallow: /wiki/Wikipedia:Requests_for_adminship
+Disallow: /wiki/Wikipedia%3ARequests_for_adminship
+Disallow: /wiki/Wikipedia_talk:Requests_for_adminship
+Disallow: /wiki/Wikipedia_talk%3ARequests_for_adminship
+#
+# https://phabricator.wikimedia.org/T14111
+Disallow: /wiki/Wikipedia:Requests_for_checkuser
+Disallow: /wiki/Wikipedia%3ARequests_for_checkuser
+Disallow: /wiki/Wikipedia_talk:Requests_for_checkuser
+Disallow: /wiki/Wikipedia_talk%3ARequests_for_checkuser
+#
+# https://phabricator.wikimedia.org/T15398
+Disallow: /wiki/Wikipedia:WikiProject_Spam
+Disallow: /wiki/Wikipedia%3AWikiProject_Spam
+#
+# https://phabricator.wikimedia.org/T16793
+Disallow: /wiki/Wikipedia:Changing_username
+Disallow: /wiki/Wikipedia%3AChanging_username
+Disallow: /wiki/Wikipedia:Changing_username
+Disallow: /wiki/Wikipedia%3AChanging_username
+Disallow: /wiki/Wikipedia_talk:Changing_username
+Disallow: /wiki/Wikipedia_talk%3AChanging_username
+Disallow: /wiki/Wikipedia_talk:Changing_username
+Disallow: /wiki/Wikipedia_talk%3AChanging_username
+#
+Disallow: /wiki/Wikipedia:Administrators%27_noticeboard
+Disallow: /wiki/Wikipedia%3AAdministrators%27_noticeboard
+Disallow: /wiki/Wikipedia_talk:Administrators%27_noticeboard
+Disallow: /wiki/Wikipedia_talk%3AAdministrators%27_noticeboard
+Disallow: /wiki/Wikipedia:Community_sanction_noticeboard
+Disallow: /wiki/Wikipedia%3ACommunity_sanction_noticeboard
+Disallow: /wiki/Wikipedia_talk:Community_sanction_noticeboard
+Disallow: /wiki/Wikipedia_talk%3ACommunity_sanction_noticeboard
+Disallow: /wiki/Wikipedia:Bureaucrats%27_noticeboard
+Disallow: /wiki/Wikipedia%3ABureaucrats%27_noticeboard
+Disallow: /wiki/Wikipedia_talk:Bureaucrats%27_noticeboard
+Disallow: /wiki/Wikipedia_talk%3ABureaucrats%27_noticeboard
+#
+Disallow: /wiki/Wikipedia:Sockpuppet_investigations
+Disallow: /wiki/Wikipedia%3ASockpuppet_investigations
+Disallow: /wiki/Wikipedia_talk:Sockpuppet_investigations
+Disallow: /wiki/Wikipedia_talk%3ASockpuppet_investigations
+#
+Disallow: /wiki/Wikipedia:Neutral_point_of_view/Noticeboard
+Disallow: /wiki/Wikipedia%3ANeutral_point_of_view/Noticeboard
+Disallow: /wiki/Wikipedia_talk:Neutral_point_of_view/Noticeboard
+Disallow: /wiki/Wikipedia_talk%3ANeutral_point_of_view/Noticeboard
+#
+Disallow: /wiki/Wikipedia:No_original_research/noticeboard
+Disallow: /wiki/Wikipedia%3ANo_original_research/noticeboard
+Disallow: /wiki/Wikipedia_talk:No_original_research/noticeboard
+Disallow: /wiki/Wikipedia_talk%3ANo_original_research/noticeboard
+#
+Disallow: /wiki/Wikipedia:Fringe_theories/Noticeboard
+Disallow: /wiki/Wikipedia%3AFringe_theories/Noticeboard
+Disallow: /wiki/Wikipedia_talk:Fringe_theories/Noticeboard
+Disallow: /wiki/Wikipedia_talk%3AFringe_theories/Noticeboard
+#
+Disallow: /wiki/Wikipedia:Conflict_of_interest/Noticeboard
+Disallow: /wiki/Wikipedia%3AConflict_of_interest/Noticeboard
+Disallow: /wiki/Wikipedia_talk:Conflict_of_interest/Noticeboard
+Disallow: /wiki/Wikipedia_talk%3AConflict_of_interest/Noticeboard
+#
+Disallow: /wiki/Wikipedia:Long-term_abuse
+Disallow: /wiki/Wikipedia%3ALong-term_abuse
+Disallow: /wiki/Wikipedia_talk:Long-term_abuse
+Disallow: /wiki/Wikipedia_talk%3ALong-term_abuse
+Disallow: /wiki/Wikipedia:Long_term_abuse
+Disallow: /wiki/Wikipedia%3ALong_term_abuse
+Disallow: /wiki/Wikipedia_talk:Long_term_abuse
+Disallow: /wiki/Wikipedia_talk%3ALong_term_abuse
+#
+Disallow: /wiki/Wikipedia:Wikiquette_assistance
+Disallow: /wiki/Wikipedia%3AWikiquette_assistance
+#
+Disallow: /wiki/Wikipedia:Abuse_reports
+Disallow: /wiki/Wikipedia%3AAbuse_reports
+Disallow: /wiki/Wikipedia_talk:Abuse_reports
+Disallow: /wiki/Wikipedia_talk%3AAbuse_reports
+Disallow: /wiki/Wikipedia:Abuse_response
+Disallow: /wiki/Wikipedia%3AAbuse_response
+Disallow: /wiki/Wikipedia_talk:Abuse_response
+Disallow: /wiki/Wikipedia_talk%3AAbuse_response
+#
+Disallow: /wiki/Wikipedia:Reliable_sources/Noticeboard
+Disallow: /wiki/Wikipedia%3AReliable_sources/Noticeboard
+Disallow: /wiki/Wikipedia_talk:Reliable_sources/Noticeboard
+Disallow: /wiki/Wikipedia_talk%3AReliable_sources/Noticeboard
+#
+Disallow: /wiki/Wikipedia:Suspected_sock_puppets
+Disallow: /wiki/Wikipedia%3ASuspected_sock_puppets
+Disallow: /wiki/Wikipedia_talk:Suspected_sock_puppets
+Disallow: /wiki/Wikipedia_talk%3ASuspected_sock_puppets
+#
+Disallow: /wiki/Wikipedia:Biographies_of_living_persons/Noticeboard
+Disallow: /wiki/Wikipedia%3ABiographies_of_living_persons/Noticeboard
+Disallow: /wiki/Wikipedia_talk:Biographies_of_living_persons/Noticeboard
+Disallow: /wiki/Wikipedia_talk%3ABiographies_of_living_persons/Noticeboard
+Disallow: /wiki/Wikipedia:Biographies_of_living_persons%2FNoticeboard
+Disallow: /wiki/Wikipedia%3ABiographies_of_living_persons%2FNoticeboard
+Disallow: /wiki/Wikipedia_talk:Biographies_of_living_persons%2FNoticeboard
+Disallow: /wiki/Wikipedia_talk%3ABiographies_of_living_persons%2FNoticeboard
+#
+Disallow: /wiki/Wikipedia:Content_noticeboard
+Disallow: /wiki/Wikipedia%3AContent_noticeboard
+Disallow: /wiki/Wikipedia_talk:Content_noticeboard
+Disallow: /wiki/Wikipedia_talk%3AContent_noticeboard
+#
+Disallow: /wiki/Template:Editnotices
+Disallow: /wiki/Template%3AEditnotices
+#
+Disallow: /wiki/Wikipedia:Arbitration
+Disallow: /wiki/Wikipedia%3AArbitration
+Disallow: /wiki/Wikipedia_talk:Arbitration
+Disallow: /wiki/Wikipedia_talk%3AArbitration
+#
+Disallow: /wiki/Wikipedia:Arbitration_Committee
+Disallow: /wiki/Wikipedia%3AArbitration_Committee
+Disallow: /wiki/Wikipedia_talk:Arbitration_Committee
+Disallow: /wiki/Wikipedia_talk%3AArbitration_Committee
+#
+Disallow: /wiki/Wikipedia:Arbitration_Committee_Elections
+Disallow: /wiki/Wikipedia%3AArbitration_Committee_Elections
+Disallow: /wiki/Wikipedia_talk:Arbitration_Committee_Elections
+Disallow: /wiki/Wikipedia_talk%3AArbitration_Committee_Elections
+#
+Disallow: /wiki/Wikipedia:Mediation_Committee
+Disallow: /wiki/Wikipedia%3AMediation_Committee
+Disallow: /wiki/Wikipedia_talk:Mediation_Committee
+Disallow: /wiki/Wikipedia_talk%3AMediation_Committee
+#
+Disallow: /wiki/Wikipedia:Mediation_Cabal/Cases
+Disallow: /wiki/Wikipedia%3AMediation_Cabal/Cases
+#
+Disallow: /wiki/Wikipedia:Requests_for_bureaucratship
+Disallow: /wiki/Wikipedia%3ARequests_for_bureaucratship
+Disallow: /wiki/Wikipedia_talk:Requests_for_bureaucratship
+Disallow: /wiki/Wikipedia_talk%3ARequests_for_bureaucratship
+#
+Disallow: /wiki/Wikipedia:Administrator_review
+Disallow: /wiki/Wikipedia%3AAdministrator_review
+Disallow: /wiki/Wikipedia_talk:Administrator_review
+Disallow: /wiki/Wikipedia_talk%3AAdministrator_review
+#
+Disallow: /wiki/Wikipedia:Editor_review
+Disallow: /wiki/Wikipedia%3AEditor_review
+Disallow: /wiki/Wikipedia_talk:Editor_review
+Disallow: /wiki/Wikipedia_talk%3AEditor_review
+#
+Disallow: /wiki/Wikipedia:Article_Incubator
+Disallow: /wiki/Wikipedia%3AArticle_Incubator
+Disallow: /wiki/Wikipedia_talk:Article_Incubator
+Disallow: /wiki/Wikipedia_talk%3AArticle_Incubator
+#
+Disallow: /wiki/Category:Noindexed_pages
+Disallow: /wiki/Category%3ANoindexed_pages
+#
+# User sandboxes for modules and Template Styles are placed in these subpages for testing
+#
+Disallow: /wiki/Module:Sandbox
+Disallow: /wiki/Module%3ASandbox
+Disallow: /wiki/Template:TemplateStyles_sandbox
+Disallow: /wiki/Template%3ATemplateStyles_sandbox
+#
+# </pre>
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://upload.wikimedia.org/robots.txt>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2021-02-23T01:08:24Z
+WARC-Record-ID: <urn:uuid:8a5710fa-f097-499f-a405-52f697bee53d>
+WARC-IP-Address: 208.80.153.240
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Block-Digest: sha1:C7S3HCBQGZAJ564A6NTG53PWB6HHSYC4
+Content-Length: 157
+
+GET /robots.txt HTTP/1.1
+User-Agent: Wget/1.20.3 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: upload.wikimedia.org
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:02310bbc-11db-4d0b-8799-0a2e52b19382>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:8a5710fa-f097-499f-a405-52f697bee53d>
+WARC-Target-URI: <https://upload.wikimedia.org/robots.txt>
+WARC-Date: 2021-02-23T01:08:24Z
+WARC-IP-Address: 208.80.153.240
+WARC-Block-Digest: sha1:ZJ5URAUB6KXFQRPWCHKBZVRXV6IK4RXD
+WARC-Payload-Digest: sha1:XZL4A775E2NEQVWIAKW2NCHFS6WZAAYD
+Content-Type: application/http;msgtype=response
+Content-Length: 1061
+
+HTTP/1.1 200 OK
+Date: Mon, 22 Feb 2021 16:58:12 GMT
+Etag: da12dc18910d62f6850b0676dc309ee7
+Server: ATS/8.0.8
+Content-Type: text/plain
+Content-Length: 53
+X-Object-Meta-Mtime: 1310309891.0
+Last-Modified: Tue, 22 Mar 2016 16:47:48 GMT
+X-Timestamp: 1458665267.96426
+Age: 29413
+X-Cache: cp2030 hit, cp2038 hit/20
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+NEL: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+X-Client-IP: 70.39.116.210
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Age, Date, Content-Length, Content-Range, X-Content-Duration, X-Cache
+Timing-Allow-Origin: *
+Accept-Ranges: bytes
+Connection: keep-alive
+
+User-agent: *
+Disallow: /wikipedia/commons/archive/
+
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2021-02-23T01:08:24Z
+WARC-Record-ID: <urn:uuid:36fe1a10-ce31-4110-93de-c66b75ea7c4e>
+WARC-IP-Address: 208.80.153.240
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Block-Digest: sha1:H7HEVZHSBK52NXZKKKHV7V6RZAK6AD7T
+Content-Length: 236
+
+GET /wikipedia/commons/6/65/Lock-green.svg HTTP/1.1
+Referer: https://en.wikipedia.org/wiki/Web_ARChive
+User-Agent: Wget/1.20.3 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: upload.wikimedia.org
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:2e21e10a-761c-4016-b373-108d9189abb0>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:36fe1a10-ce31-4110-93de-c66b75ea7c4e>
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg>
+WARC-Date: 2021-02-23T01:08:24Z
+WARC-IP-Address: 208.80.153.240
+WARC-Block-Digest: sha1:OZXTNKILIPE4MUVLQAFNRM47WDUCZAP5
+WARC-Payload-Digest: sha1:W6MLUMPS425JPJ6FC4PH7427CPF52NIW
+Content-Type: application/http;msgtype=response
+Content-Length: 1496
+
+HTTP/1.1 200 OK
+Date: Mon, 22 Feb 2021 05:33:42 GMT
+Server: ATS/8.0.8
+ETag: W/f99d5d66e6ef5fb312ed07842356ca2c
+Content-Type: image/svg+xml
+X-Object-Meta-Sha1Base36: lg26mu0oi9yw04piderazn15lmdu0wm
+Last-Modified: Tue, 05 Jun 2018 22:08:05 GMT
+X-Timestamp: 1528236484.24024
+Vary: Accept-Encoding
+Age: 70483
+X-Cache: cp2042 hit, cp2038 hit/51104
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+NEL: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+X-Client-IP: 70.39.116.210
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Age, Date, Content-Length, Content-Range, X-Content-Duration, X-Cache
+Timing-Allow-Origin: *
+Accept-Ranges: bytes
+Content-Length: 432
+Connection: keep-alive
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 595 945" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <path id="shackle" d="m507.5 507.5v-260a210 210 0 0 0 -412.84 -54.352" stroke="#008900" stroke-width="75" fill="none"/>
+ <g id="body">
+  <circle stroke-width="75" stroke="#008900" cy="647.5" cx="297.5" r="260" fill="none"/>
+  <circle cy="647.5" cx="297.5" r="90" fill="#008900"/>
+ </g>
+</svg>
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2021-02-23T01:08:24Z
+WARC-Record-ID: <urn:uuid:04b902b5-a68b-4f89-9fa4-4bd175f2d01c>
+WARC-IP-Address: 208.80.153.240
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Block-Digest: sha1:5LGGSNLIC2APC7WNEQC6DQ6YJXL63X6H
+Content-Length: 241
+
+GET /wikipedia/commons/d/d6/Lock-gray-alt-2.svg HTTP/1.1
+Referer: https://en.wikipedia.org/wiki/Web_ARChive
+User-Agent: Wget/1.20.3 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: upload.wikimedia.org
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:40451c9e-d39a-4dbd-98d4-988fb28f2881>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:04b902b5-a68b-4f89-9fa4-4bd175f2d01c>
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg>
+WARC-Date: 2021-02-23T01:08:24Z
+WARC-IP-Address: 208.80.153.240
+WARC-Block-Digest: sha1:7O62LDZJ7ECS4R5VTDNIKW5Z6PJG6BBW
+WARC-Payload-Digest: sha1:AQMMWNVSJPU4YCMUNVAERKM5IUWR4OBX
+Content-Type: application/http;msgtype=response
+Content-Length: 1580
+
+HTTP/1.1 200 OK
+Date: Mon, 22 Feb 2021 01:48:52 GMT
+Server: ATS/8.0.8
+ETag: W/423bb01c87eb6c81999073a8ecd2b383
+Content-Type: image/svg+xml
+X-Object-Meta-Sha1Base36: 0h87lgkfxx45g5zv62pzfvffensy2bb
+Last-Modified: Fri, 25 Nov 2016 17:53:25 GMT
+X-Timestamp: 1480096404.09416
+Vary: Accept-Encoding
+Age: 83973
+X-Cache: cp2030 hit, cp2038 hit/85423
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+NEL: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+X-Client-IP: 70.39.116.210
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Age, Date, Content-Length, Content-Range, X-Content-Duration, X-Cache
+Timing-Allow-Origin: *
+Accept-Ranges: bytes
+Content-Length: 516
+Connection: keep-alive
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 595 945" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <path id="shackle" d="m 87.5, 492.5 0, -245 c 0, -116 94, -210 210, -210 116, 0 210, 94 210, 210 l 0, 258" stroke="#757575" stroke-dasharray="121, 85" stroke-width="75" fill="none"/>
+ <g id="body">
+  <circle stroke-width="75" stroke="#757575" cy="647.5" cx="297.5" r="260" fill="none"/>
+    <path id="half-body" d="m297.5,350a260,260 0 0 1 0,595" fill="#757575"/>
+ </g>
+</svg>
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2021-02-23T01:08:24Z
+WARC-Record-ID: <urn:uuid:118a4fe2-8ec5-4676-b51c-cb96ac0ad617>
+WARC-IP-Address: 208.80.153.240
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Block-Digest: sha1:O72GI7EULV2TWYBHNEMXVVCNEYC2M6LR
+Content-Length: 240
+
+GET /wikipedia/commons/a/aa/Lock-red-alt-2.svg HTTP/1.1
+Referer: https://en.wikipedia.org/wiki/Web_ARChive
+User-Agent: Wget/1.20.3 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: upload.wikimedia.org
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:c439f738-7e55-45ee-936c-b6661aef31aa>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:118a4fe2-8ec5-4676-b51c-cb96ac0ad617>
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg>
+WARC-Date: 2021-02-23T01:08:24Z
+WARC-IP-Address: 208.80.153.240
+WARC-Block-Digest: sha1:LW3ZWRNZYBQQGFXZS75G63K5R4K4OTXG
+WARC-Payload-Digest: sha1:2QD4VPXE33OKUSHDUWDKJ5CB2MROTQQP
+Content-Type: application/http;msgtype=response
+Content-Length: 3199
+
+HTTP/1.1 200 OK
+Date: Mon, 22 Feb 2021 05:17:50 GMT
+Server: ATS/8.0.8
+ETag: W/475691b24fc0b3a3031abf3e09ec4cdf
+Content-Type: image/svg+xml
+X-Object-Meta-Sha1Base36: ormpfbzt7pp075byu6d8luvv4lt8irz
+Last-Modified: Fri, 20 Jul 2018 00:39:49 GMT
+X-Timestamp: 1532047188.01049
+Vary: Accept-Encoding
+Age: 71435
+X-Cache: cp2042 hit, cp2038 hit/19236
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+NEL: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+X-Client-IP: 70.39.116.210
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Age, Date, Content-Length, Content-Range, X-Content-Duration, X-Cache
+Timing-Allow-Origin: *
+Accept-Ranges: bytes
+Content-Length: 2134
+Connection: keep-alive
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 597 946.99994"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="new.svg"
+   width="597"
+   height="946.99994">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="1135"
+     id="namedview9"
+     showgrid="false"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-bottom="1"
+     fit-margin-right="1"
+     inkscape:zoom="0.38995236"
+     inkscape:cx="320.62083"
+     inkscape:cy="-413.72788"
+     inkscape:window-x="1600"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     id="shackle"
+     d="m 508.5,508.49991 0,-260 a 210,210 0 1 0 -420,0 l 0,260"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#ec0000;stroke-width:75" />
+  <path
+     style="fill:#ec0000;stroke:none;stroke-width:75"
+     d="m 298.5,350.99991 a 297.5,297.5 0 0 0 -297.5,297.5 297.5,297.5 0 0 0 297.5,297.5 297.5,297.5 0 0 0 297.5,-297.5 297.5,297.5 0 0 0 -297.5,-297.5 z m 0,207.5 a 90,90 0 0 1 90,90 90,90 0 0 1 -90,90 90,90 0 0 1 -90,-90 90,90 0 0 1 90,-90 z"
+     id="circle9"
+     inkscape:connector-curvature="0" />
+</svg>
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-Record-ID: <urn:uuid:ba50eb19-d5f9-4b32-baa7-8efef1e5778b>
+WARC-IP-Address: 208.80.153.240
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Block-Digest: sha1:FD6THWPH77MK6CAGTAUOLIJ5J76IJQPN
+Content-Length: 241
+
+GET /wikipedia/commons/4/4c/Wikisource-logo.svg HTTP/1.1
+Referer: https://en.wikipedia.org/wiki/Web_ARChive
+User-Agent: Wget/1.20.3 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: upload.wikimedia.org
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:5b189c75-bd27-4d76-9bb5-a96d06b83391>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:ba50eb19-d5f9-4b32-baa7-8efef1e5778b>
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg>
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-IP-Address: 208.80.153.240
+WARC-Block-Digest: sha1:7DQCB7FQWHAEVK6VEAGUL46X4UI3YVSV
+WARC-Payload-Digest: sha1:5DUL764GIB7X3ZCR7S325ROZIHFRE7LN
+Content-Type: application/http;msgtype=response
+Content-Length: 17226
+
+HTTP/1.1 200 OK
+Date: Mon, 22 Feb 2021 03:30:27 GMT
+Server: ATS/8.0.8
+ETag: W/9531cc097b22b038c464b790e054fda7
+Content-Type: image/svg+xml
+X-Object-Meta-Sha1Base36: r7fhccr9wv5icd72ro0zh44tkrco31p
+Last-Modified: Fri, 10 Oct 2014 10:09:52 GMT
+X-Timestamp: 1412935791.67571
+Vary: Accept-Encoding
+Age: 77878
+X-Cache: cp2040 hit, cp2038 hit/13288
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+NEL: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+X-Client-IP: 70.39.116.210
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Age, Date, Content-Length, Content-Range, X-Content-Duration, X-Cache
+Timing-Allow-Origin: *
+Accept-Ranges: bytes
+Content-Length: 16160
+Connection: keep-alive
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1325"
+   sodipodi:version="0.32"
+   inkscape:version="0.43"
+   width="410"
+   height="430"
+   sodipodi:docbase="D:\"
+   sodipodi:docname="wikisource-nt.svg"
+   version="1.1">
+  <metadata
+     id="metadata1330">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1328" />
+  <sodipodi:namedview
+     inkscape:window-height="588"
+     inkscape:window-width="1019"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="0.97956512"
+     inkscape:cx="205.93747"
+     inkscape:cy="174.05683"
+     inkscape:window-x="-1"
+     inkscape:window-y="118"
+     inkscape:current-layer="svg1325"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <g
+     id="g2492"
+     transform="matrix(1.005595,0,0,1.000506,-0.942714,-0.217568)">
+    <path
+       id="path1334"
+       d="M 203.5,0.21875 C 135.60706,0.67252098 75.52335,36.174749 38.78125,90.40625 L 370.8125,90.40625 C 333.83287,35.82415 273.24573,0.21875 204.8125,0.21875 C 204.37293,0.21875 203.93892,0.21581644 203.5,0.21875 z "
+       style="opacity:1;fill:#608ab4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.56465685;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       id="path2488"
+       d="M 27,110 C 10.417835,141.08269 0.9375,176.91683 0.9375,215.09375 C 0.9375,333.71387 92.282775,430 204.8125,430 C 317.34222,430 408.65624,333.71387 408.65625,215.09375 C 408.65625,176.91683 399.20717,141.08269 382.625,110 L 27,110 z "
+       style="opacity:1;fill:#375493;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.56465685;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       id="path2361"
+       d="M 38.78125,90.40625 C 34.523245,96.691084 30.607797,103.23731 27,110 L 382.625,110 C 379.0172,103.23731 375.0705,96.691084 370.8125,90.40625 L 38.78125,90.40625 z "
+       style="opacity:1;fill:#d6dde3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.56465685;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       id="path2219"
+       d="M 291.875,24.3125 C 291.02857,24.326871 290.11961,24.516585 289.15625,24.8125 C 280.07457,39.382052 280.10285,87.653144 280.21875,98.09375 C 280.23792,98.098114 280.26208,98.089376 280.28125,98.09375 C 293.72569,101.09093 311.52557,97.649401 312.125,84.71875 C 313.15261,67.677695 314.17901,51.149797 305.1875,40.53125 C 296.9667,44.299123 298.5272,29.050338 295.1875,25.625 C 294.35425,24.667645 293.19444,24.290098 291.875,24.3125 z "
+       style="fill:#7bbce5;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path2230"
+       d="M 289.15625,24.8125 C 284.3678,26.283369 278.53935,30.649214 275.65625,32.0625 C 273.14962,32.331624 268.49888,32.136643 265.03125,33.03125 C 257.57629,34.954538 250.79096,39.529756 246.875,46.71875 C 241.81739,31.956351 230.96362,50.110389 218.09375,60.5625 C 210.96478,55.167594 196.60364,44.405059 183.4375,37.46875 C 172.84783,42.863656 161.7489,61.083598 155.15625,62.625 C 148.30556,63.909503 138.64977,63.150144 134.625,68.03125 C 127.9456,74.967562 125.87825,82.92489 124.59375,90.375 C 140.26467,95.941172 156.70408,96.109586 172.375,93.96875 C 181.28088,91.827914 187.61847,94.842534 196.78125,94.5 C 224.59121,95.697967 254.71221,92.288926 280.21875,98.09375 C 280.10285,87.653144 280.07457,39.382052 289.15625,24.8125 z "
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cccccc"
+       id="path2221"
+       d="M 196.27186,53.897897 C 199.61652,64.002644 202.5166,74.10739 201.40987,84.212137 C 200.211,90.463379 202.86564,90.035212 207.83238,87.551842 C 212.71349,84.897205 215.28249,81.985668 222.4757,79.587931 C 228.04187,78.046529 224.10274,73.936124 221.4481,71.11022 C 213.50951,63.558837 204.87616,58.78646 196.27186,53.897897 z "
+       style="fill:#7bbce5;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path2364"
+       d="M 224.8125,110 C 230.66375,187.79306 282.917,197.34975 315.8125,181.625 C 299.36429,165.35956 305.33026,132.20927 322.875,131.84375 C 355.3267,131.05408 346.0869,191.66975 346.09375,221.09375 C 363.83576,217.48573 362.6738,150.35502 358.90625,110 L 224.8125,110 z "
+       style="fill:#294584;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccssssssssssscccccc"
+       id="path2370"
+       d="M 56.75,110 C 57.387786,116.69675 58.018466,123.397 58.65625,130.09375 C 62.948559,137.95233 66.140215,145.79767 65.25,153.65625 C 73.729185,151.56674 78.78165,150.47377 83.34375,159.15625 C 103.29716,171.57932 122.2497,173.06122 140.90625,171.21875 C 144.69922,216.35991 143.59301,252.6704 142,306.625 C 153.33098,325.44905 164.66902,343.30094 176,362.125 C 182.50695,373.56938 193.91988,377.18329 202.875,363.65625 C 210.55083,360.18385 218.19917,356.72239 225.875,353.25 C 225.875,357.08791 225.875,360.91209 225.875,364.75 C 237.66328,367.71619 249.32262,372.22829 243.96875,384.5 C 239.8943,392.42506 242.18734,395.95136 253.78125,390.65625 C 264.02252,385.66802 270.34257,393.40421 275.6875,394.78125 C 268.06743,386.66578 274.62498,370.68979 274.8654,354.1898 C 285.7996,353.19098 298.28454,343.28007 309.21875,342.28125 C 331.70092,320.46075 335.57233,312.342 335.53125,284.15625 C 337.78982,276.84594 341.03351,274.91505 339.375,262.21875 C 340.6543,254.36017 342.43945,244.07734 343.71875,236.21875 C 344.59506,231.07519 345.43833,226.03934 346.28125,221.0625 C 346.22035,221.07649 346.1551,221.08127 346.09375,221.09375 C 346.0869,191.66975 355.3267,131.05408 322.875,131.84375 C 305.33026,132.20927 299.36429,165.35956 315.8125,181.625 C 311.99931,183.44779 307.91846,184.95499 303.6875,186.03125 C 305.02128,193.70254 299.4795,201.57419 292.21875,201.90625 C 284.97392,201.25826 274.31769,208.44823 267.5625,224.9375 C 256.76611,247.70898 246.94149,227.89827 243,221.78125 C 237.94142,215.06416 244.15326,208.8201 230.28125,212.875 C 221.13651,215.70238 209.52948,217.57023 206.75,203.75 C 195.0535,191.87075 183.85275,181.44175 172.15625,169.5625 C 167.48632,164.00429 171.37591,159.4284 171.40625,157.46875 C 171.40611,157.42729 171.40717,157.35945 171.40625,157.3125 C 171.40578,157.30529 171.40711,157.28762 171.40625,157.28125 C 171.40036,157.25923 171.38191,157.20891 171.375,157.1875 C 171.36854,157.16384 171.35211,157.1163 171.34375,157.09375 C 171.32873,157.05679 171.3019,157.00259 171.28125,156.96875 C 171.27608,156.95778 171.2554,156.91709 171.25,156.90625 C 171.24174,156.89802 171.22274,156.87961 171.21875,156.875 C 171.19926,156.85397 171.15158,156.80544 171.125,156.78125 C 171.09507,156.75778 171.04212,156.7149 171,156.6875 C 170.9833,156.67726 170.95279,156.66404 170.9375,156.65625 C 170.8834,156.63035 170.81457,156.61485 170.75,156.59375 C 166.18789,153.71457 160.65601,157.1807 154.625,159.6875 C 138.88165,162.57811 132.73413,159.79617 131.03125,151.46875 C 131.12411,137.714 123.38767,139.14891 110.75,141.0625 C 74.322432,146.2524 68.431439,133.35895 57.8125,110 L 56.75,110 z "
+       style="fill:#e0e9ea;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path2383"
+       d="M 57.8125,110 C 68.431435,133.35895 74.32243,146.2524 110.75,141.0625 C 123.38767,139.14891 131.12411,137.714 131.03125,151.46875 C 132.73413,159.79617 138.88165,162.57811 154.625,159.6875 C 160.65601,157.18069 166.18789,153.71457 170.75,156.59375 C 170.81457,156.61485 170.8834,156.63035 170.9375,156.65625 C 170.95279,156.66404 170.9833,156.67726 171,156.6875 C 171.04212,156.7149 171.09507,156.75778 171.125,156.78125 C 171.15158,156.80544 171.19926,156.85397 171.21875,156.875 C 171.22274,156.87961 171.24174,156.89802 171.25,156.90625 C 171.2554,156.91709 171.27608,156.95778 171.28125,156.96875 C 171.3019,157.00259 171.32873,157.05679 171.34375,157.09375 C 171.35211,157.1163 171.36854,157.16384 171.375,157.1875 C 171.38191,157.20891 171.40036,157.25923 171.40625,157.28125 C 171.40711,157.28762 171.40578,157.30529 171.40625,157.3125 C 171.40717,157.35945 171.40611,157.42729 171.40625,157.46875 C 171.37591,159.42841 167.48632,164.00429 172.15625,169.5625 C 183.85275,181.44175 195.0535,191.87075 206.75,203.75 C 209.52948,217.57023 221.13651,215.70238 230.28125,212.875 C 244.15326,208.8201 237.94142,215.06416 243,221.78125 C 246.94149,227.89827 256.76611,247.70898 267.5625,224.9375 C 274.31769,208.44824 284.97392,201.25826 292.21875,201.90625 C 299.4795,201.57418 305.02128,193.70254 303.6875,186.03125 C 271.41892,194.23961 229.98548,178.77542 224.8125,110 L 57.8125,110 z "
+       style="fill:#4d8ac0;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path2398"
+       d="M 166.9375,199.375 C 156.43914,200.05991 161.91133,235.16079 163.0625,251.78125 C 164.61786,268.14237 168.265,264.28833 179.6875,257.15625 C 184.94013,267.80961 181.74621,273.76182 174.3125,280.65625 C 168.77803,285.88639 165.60371,293.69846 170.40625,302.6875 C 171.87516,305.13568 173.10865,306.17348 174.8125,310.03125 C 175.95498,312.31622 177.07627,314.62126 178.21875,316.90625 C 179.53685,321.95845 178.04961,325.10961 175.84375,327.8125 C 173.80108,330.7379 173.40652,333.68733 176.0625,341.78125 C 177.51164,346.48222 173.53973,352.09535 179.6875,357.03125 C 182.41193,359.14751 185.08063,360.73099 187.8125,361.90625 C 185.44211,355.00677 185.37198,345.04953 186.53125,336.5 C 187.31435,328.434 187.85754,323.41925 195.21875,317.9375 C 201.64023,314.64845 199.85807,297.2745 200.40625,286.9375 C 200.46941,286.99278 200.55902,287.04251 200.625,287.09375 C 200.61673,287.04782 200.63265,286.98351 200.625,286.9375 C 214.36091,284.03696 206.71352,273.05018 202.5,262.5 L 168.90625,199.625 C 168.24242,199.44073 167.63131,199.35282 167.0625,199.375 C 167.02084,199.37662 166.97867,199.37231 166.9375,199.375 z "
+       style="fill:#d6dde3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path2404"
+       d="M 168.90625,199.625 L 202.5,262.5 C 206.71352,273.05018 214.36091,284.03696 200.625,286.9375 C 201.84937,294.2987 210.9536,300.70517 221.0625,299.84375 C 231.57721,299.16615 239.22398,307.02775 242.6875,314.96875 C 243.14496,306.21177 244.21297,297.52228 246.34375,288.9375 C 247.70139,284.69399 255.39512,280.93434 249,275.28125 C 223.10126,246.76607 198.13813,224.3489 170.125,200.0625 C 169.69929,199.87785 169.29727,199.73354 168.90625,199.625 z "
+       style="fill:#608ab4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path2407"
+       d="M 200.40625,286.9375 C 199.85807,297.2745 201.64023,314.64845 195.21875,317.9375 C 187.85754,323.41925 187.31435,328.434 186.53125,336.5 C 185.37042,345.06106 185.43267,355.03699 187.8125,361.9375 C 190.24206,362.97591 192.73141,363.67957 195.375,364.125 C 199.82126,364.52314 202.62017,365.62251 212,363.90625 C 220.21255,362.95915 225.14404,358.94821 234.53125,357.53125 C 239.65517,356.52484 243.12327,354.56944 242.84375,346.75 C 242.45269,336.07079 242.13685,325.46902 242.6875,314.96875 C 239.22398,307.02775 231.57721,299.16615 221.0625,299.84375 C 211.07206,300.69508 202.04786,294.43946 200.65625,287.1875 C 200.6535,287.17317 200.65894,287.17059 200.65625,287.15625 C 200.65115,287.15184 200.66134,287.12943 200.65625,287.125 C 200.57991,287.05855 200.4812,287.00786 200.40625,286.9375 z "
+       style="fill:#236798;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccccccssssscccccsssssssccccc"
+       id="path2460"
+       d="M 338.46875,276.53125 C 337.6061,278.92341 336.48761,281.06079 335.53125,284.15625 C 335.57233,312.342 331.70092,320.46075 309.21875,342.28125 C 309.01644,342.33197 302.58781,357.4073 297.125,361.34375 C 287.91001,368.15617 288.48532,374.33338 285.0625,381.78125 C 282.58538,385.54582 279.16461,386.15238 276.6875,385.46875 C 275.14088,384.24774 273.57787,383.66898 272.03125,381.8125 C 271.9335,384.85806 272.14572,387.63126 272.9375,390.0625 C 272.97299,390.13442 272.99589,390.20933 273.03125,390.28125 C 273.03454,390.29086 273.02794,390.3029 273.03125,390.3125 C 273.46514,391.19526 273.87197,392.08599 274.28125,392.96875 C 274.30362,393.00463 274.32099,393.02685 274.34375,393.0625 C 274.34766,393.07096 274.33984,393.08529 274.34375,393.09375 C 274.71557,393.67295 275.14425,394.2323 275.625,394.75 C 275.47864,394.711 275.3354,394.67301 275.1875,394.625 C 284.62596,409.71715 297.95561,414.4376 315.0625,408.5 C 324.2737,404.48242 329.65882,400.80406 335.375,396.46875 C 340.34723,391.75246 346.26306,382.89832 336.9375,382.3125 C 335.60881,381.96083 334.86896,381.61672 334.5,381.25 C 334.48661,381.23612 334.44985,381.20147 334.4375,381.1875 C 334.40199,381.14547 334.37039,381.07416 334.34375,381.03125 C 334.30592,380.96665 334.26982,380.87947 334.25,380.8125 C 334.24601,380.79755 334.22192,380.76508 334.21875,380.75 C 334.21459,380.72728 334.22116,380.67928 334.21875,380.65625 C 334.2169,380.63311 334.21896,380.58598 334.21875,380.5625 C 334.23727,379.21786 336.7961,377.29989 334.84375,373.40625 C 333.50812,367.45068 339.18425,361.81988 343.25,360.3125 C 340.45516,354.19879 337.63859,348.08246 334.84375,341.96875 C 335.0369,337.95424 342.93446,335.83501 341.65625,328.34375 C 343.93578,309.49955 347.02541,281.52874 338.46875,276.53125 z "
+       style="fill:#608ab4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path2468"
+       d="M 288.03125,202.3125 C 281.27622,204.13028 273.10387,211.41115 267.5625,224.9375 C 265.0321,230.27457 262.54791,233.27287 260.1875,234.65625 C 260.42406,257.90517 265.94713,274.45688 277.375,283.53125 C 273.9859,296.98175 270.60724,315.52359 276.75,326.75 C 266.37085,323.46682 270.60263,344.3345 267.53125,353.125 C 262.34167,367.74053 257.77809,367.10409 252.90625,368.375 C 257.35445,373.45867 263.07757,378.85396 271.65625,382.03125 C 271.65774,382.04785 271.65317,382.07711 271.65625,382.09375 C 271.67362,382.16873 271.73429,382.26787 271.78125,382.34375 C 272.42051,383.3146 275.29796,384.37175 276.6875,385.46875 C 279.16461,386.15238 282.58538,385.54582 285.0625,381.78125 C 288.48532,374.33338 287.91001,368.15617 297.125,361.34375 C 302.46044,357.49908 308.74119,343.00137 309.21875,342.28125 C 290.98447,332.03327 282.36549,312.5039 285.3125,293.6875 C 286.15977,288.49794 289.55411,282.67936 285,274.3125 C 279.55423,251.31921 283.02238,224.56744 288.03125,202.3125 z "
+       style="fill:#236798;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/30px-Crystal_Clear_app_browser.png>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-Record-ID: <urn:uuid:fdc7575c-d3aa-4217-8ff0-8a44eb440b6b>
+WARC-IP-Address: 208.80.153.240
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Block-Digest: sha1:AZUXNDQHI4ESCZXFQ7L6CYYMJIGDCL6Y
+Content-Length: 292
+
+GET /wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/30px-Crystal_Clear_app_browser.png HTTP/1.1
+Referer: https://en.wikipedia.org/wiki/Web_ARChive
+User-Agent: Wget/1.20.3 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: upload.wikimedia.org
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:d8b79ab8-36d7-40bf-adec-44d5e19dc66a>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:fdc7575c-d3aa-4217-8ff0-8a44eb440b6b>
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/30px-Crystal_Clear_app_browser.png>
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-IP-Address: 208.80.153.240
+WARC-Block-Digest: sha1:NIYAFH27WGYCGNFQNJVDYKXDWQOU7N6K
+WARC-Payload-Digest: sha1:KGYICYCU45IEDPWYT5RBPVHGS2SYX7UG
+Content-Type: application/http;msgtype=response
+Content-Length: 4155
+
+HTTP/1.1 200 OK
+Date: Mon, 22 Feb 2021 04:43:01 GMT
+Etag: 7ecb951ccc5c05ccaa11303e1e864e3a
+Server: ATS/8.0.8
+Content-Type: image/png
+Content-Length: 3122
+X-Object-Meta-Sha1Base36: 9jiqu18l4e363emlvo3z85qjnjiipae
+Last-Modified: Mon, 29 Feb 2016 03:14:07 GMT
+X-Timestamp: 1456715646.78436
+Age: 73524
+X-Cache: cp2028 hit, cp2038 hit/17
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+NEL: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+X-Client-IP: 70.39.116.210
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Age, Date, Content-Length, Content-Range, X-Content-Duration, X-Cache
+Timing-Allow-Origin: *
+Accept-Ranges: bytes
+Connection: keep-alive
+
+‰PNG
+
+   IHDR         ;0®¢   gAMA  ÙÜ²Ú   bKGD ÿ ÿ ÿ ½§“   	pHYs   H   H FÉk>  	zIDATHÇ•—kŒdÇUÇU÷Ş¾·ß=ïİÙÙ§wÖk{íµµVboœ €cM¤(Qø„V"!„@„ÂW""€x>D "‚'–q)~ÉÄí]ïîìîììxfvŞİ=ÓÛ}ßUÅ‡î±Š ”tt_ªó¯:ÿSÿs®àg×§]*§fäD©îæİZŞµe’*q[·º»ô–p6¿û?=Šÿıói*¿ü7øW_>SŸî‰ÇêÜ©é³³ÓåÉjÙó<×i¦Ì HÂıö µ¶Õ¹õæ»«¯.ŞŞüîÑg¿º¶ùW ÿàü—8÷ÛÏ°ô7ê]:ùÅ'=ñë?|ì¡';!¦Æ‹8…c[(¥ÑÆ`ŒAkC×xïÆ–¾qg÷ƒ÷olşíëo,ıûì‰™Ö•ï|åg >ş»4×şŒÓşèÂåK'ÿâù/<ş‰K³Æ«”ÒQ€”Ã©Y¦‡„À²$Rß­oµÕ¿½|ı¥W~xëûÂÇo}íË|ó§[÷ıõÉ
+ÍƒşÓŸæÂ×çù§æê5”Öäl!ı0&ŠS2¥ql‰Ö¥–””‹îèYSğr´»!ßzåúÕ?ÿÇ×¾òÀÅão¾öÍAğ÷C¬¢{şÉålÚİğãO_^øúoşêåæê5”2!0úa‚Ö† Jèú1Q¢HÒŒA%AÎ±±mK
+Çff²\ORõèK¯Üxcln¬)Æ$m¾üh·RFÉäÉ£ãüÙO?xáX½F§¤©"M5]?¢ëGdJQ«ä‰âŒ(J‘Bà÷c:ı A)Rš$QAJ­”ç<ûÈñ£c_k6z“bc üĞWé/oˆ‰¹éßúôÇîÿµ_úÔ9iY¥ ?äö‡{ì6}ü~Ä~' ÕP«ä9wjŠíFv7¢>YÆ¶$­Î€n?"ŒR²LS.æÙØêŞ·º}°Q-~ÌØØ‡‰áœ¨ß?=^ùó§g,)a˜bÛ’ L¸{¯É~g @&¤™†<Léõ#­>¶maŒ¡XpRpo»C·!€j¹À£ççå;×6_Ùl¼Tğrkvîìïmûçµ1ó•²K–iî5»tü Û’líuG™yÏ!N²O§ôú1óGjÌ©Q«z´;“c%Ê0ÎH3EÁË1_¿¸İl?gYò/e.g£”r-KşÜŞA÷oŞc»Ñcoßç àb*%Lyn÷Bº!íŞĞzı\<”œca4`À0,!éúAÂñ#ãŒUŠŸìl6s¶²}NÀãJiV¶Z¤¯e\zhÓÇ¦¸½ºGÎ&Óé…h=äŞ RÊE—JÙ#ŠínDœ(lK(M’)âXqo»M1ï2^)Ş¿Q.LŸ¦µ6mX¼»Çæn—§.fz¢D.gaY’V{Àş~ÿ¿éÍxµ@ã ÏÊú>÷Ÿ!M5I¬H3…”‚0ÊèõÇbiuíVg²TÌÏZîÌ'.Ÿˆ…çÚ|¸±O»²pbš‹çç˜›©rl¶n­4„	FÃìt¥a˜Ñ<è³¼Ö$Œ2rM–iz~Â~;$gÛ¬m°ºÕ2Bˆm~âX	!èú!õ©iª¹³Ú$ˆR¢(³SU~ñ©"iªxq‹4SX–`z¼Ä¯m°Ûê‚ûOò¹§/0¤Cç¶di½ÁÕÛ˜¡Y‡ÀúP•ÒAÊÙ““Ü\Şc¿2R´1!©–]~åÙ‹|æ¼úÎ
+Ÿ{æAü~Ì»×¶°¥MÎ±¸·İeu£M­œGkCŞ³xoq?ˆB@*× {Èåæ^T+yşóÊ*»-Ÿ(ÊÃ”8ÉÈ2M¥Ü]kaKÜœƒ@¢x9¥4Yfğû	iª)äsÔ'«H!BcLGšaê¯CÓ¶%m‘eŠõÍ6gO°¶sÀ÷^]$NÔ¨‚R†·¯®D	ÿôÂ¾õ‹¸9›ZÕCJ%%e‘Œäv»Ùcf¢ÌùSuìÃ4FcŒ¾æ] Ï³A?ˆ¹»Şâì‰I²LaŒê°Ö\¿³Ã·wÂ”ëK;líöRPÌç«åI’ŒÆÁ€4U$©byµÁD­@ÇÉ”ZÓéÁUÜÚB„1¯¦©¢ZöpsÃØîF¬mµyàì®kQ,äplÉÕå¢K« ¤ Û€RšV§O³ÛãG¬ÑëÇ|¸ÙâÚò»í.Kk{xİÎ•bKùË"¼÷‚tªç4²ğlµ’/y®ƒÄÃ‚/§æ&øØ#óœ_˜¤VõĞ®.îÇ)cEzı ãtü€4Sì´ºìíû\½½I©”CiÍÆöÁM5şÄ_üÓ†5^°ú/»iØüŞA'0Õ²ÇÔXKª%)$ş ÁÍÙTË…¼Cq”,¥¼‹ãH´Ñh£ñ\‡¼ç`[’+·60hæÔØiôL6_îşÃ.àZ£3\D§ã:n´{âáœ›Ÿ˜®w
+ùó³ó.Å HXÛh3R¤x®M¦cR -‰m \ty`a¨f‹·–oDÛ/ÿ³I: ¶ 	€šI»Ec²X9³÷UÊåÂ‘™
+c&ªE¦ÆK¬nîseq›ıö°8L˜;RÃ±-0`Û’œcS«ä™*³prŠV;àí÷–ş½W¾¡ü;«€¬Q¨xY‡Û‰Vdy3ÇjÕj¡VÉ31çØÑ
+[»=Â0¡Rö)¶%B €±Z™‰2õé2cÕ<JiV7;\½~g·µöÃogí÷¯í‘õÅhçà¦ıõ®ÎÂ–S¨×‹ÅriÔ?“÷*%#ÓÊ%—¹zuX¥ÌPõ†(JÙiø¬¬·ôòİ»k•ï'j¾sh{#±X£ê¦G–Êgìou{­;ËÒ.kÇ«MNWÜJÉcr¼È¹3Sœ;3ÅÌT7g¸v8Z¯²±İ1·—7»+·ŞúÁúµ}1h//»ÀÖ¸¤‡]¦áÈ¢4öıææw»ÛKqœìk-tÎqóa¤r]?Ö ßñû‘Ùk´ık×oŞy÷7_¿öößİXúÁ[iÜ[6G¶7â7ôÿlè%`P*#+Å|¡Z]xğò±#s§gÊåjI
+)2¥´ßëø›Ë»Ë7ßÚˆ#¿F İÑ5f£MşÔ_˜CÎ­CÎGñF÷Îhq‡p­lä<ú	;S‡€‡ã¿ ÂC‰va   YtEXtcomment File source: http://commons.wikimedia.org/wiki/File:Crystal_Clear_app_browser.png>1À   %tEXtdate:create 2008-11-01T19:42:52+00:005mîø   %tEXtdate:modify 2007-01-23T22:32:06+00:00 mej   EtEXtsoftware ImageMagick 6.6.2-6 2010-10-23 Q8 http://www.imagemagick.orgäÏ   tEXtThumb::Document::Pages 1§ÿ»/   tEXtThumb::Image::height 128!BP   tEXtThumb::Image::Width 128Ğİ   tEXtThumb::Mimetype image/png?²VN   tEXtThumb::MTime 1169591526fÏ   tEXtThumb::Size 17.6KBƒò
+   StEXtThumb::URI file:///mnt/upload6/wikipedia/commons/f/fe/Crystal_Clear_app_browser.png£uÂ÷    IEND®B`‚
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/45px-Crystal_Clear_app_browser.png>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-Record-ID: <urn:uuid:0c47f19d-a3f7-4e2b-980b-dae2fbb5d032>
+WARC-IP-Address: 208.80.153.240
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Block-Digest: sha1:WCIWTQNJTVSHJPHWJ6ZY6COD6K4IX3MZ
+Content-Length: 292
+
+GET /wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/45px-Crystal_Clear_app_browser.png HTTP/1.1
+Referer: https://en.wikipedia.org/wiki/Web_ARChive
+User-Agent: Wget/1.20.3 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: upload.wikimedia.org
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:67f9c813-b7a2-40dd-847b-f9e0cef2f961>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:0c47f19d-a3f7-4e2b-980b-dae2fbb5d032>
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/45px-Crystal_Clear_app_browser.png>
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-IP-Address: 208.80.153.240
+WARC-Block-Digest: sha1:3VI5H4MD7UQ6U4PG6AI3MWDLGE3ZV3UX
+WARC-Payload-Digest: sha1:JHOQBQYLL2P3LNXUV2VAUM7YMX5JUOBU
+Content-Type: application/http;msgtype=response
+Content-Length: 6231
+
+HTTP/1.1 200 OK
+Date: Mon, 22 Feb 2021 21:45:46 GMT
+Etag: bed52f3550851c9673e470e42cf01927
+Server: ATS/8.0.8
+Content-Type: image/png
+Content-Length: 5258
+Last-Modified: Mon, 29 Feb 2016 03:14:12 GMT
+X-Timestamp: 1456715651.49895
+Age: 12159
+X-Cache: cp2040 hit, cp2038 hit/2
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+NEL: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+X-Client-IP: 70.39.116.210
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Age, Date, Content-Length, Content-Range, X-Content-Duration, X-Cache
+Timing-Allow-Origin: *
+Accept-Ranges: bytes
+Connection: keep-alive
+
+‰PNG
+
+   IHDR   -   -   :âš   gAMA  ÙÜ²Ú   bKGD ÿ ÿ ÿ ½§“   	pHYs   H   H FÉk>  ÒIDATXÃ½™[Œd×Yïk­}©{wuW_ç>v{ìà„Xv0		BˆD¸=€/ àˆDBB ñÈG9èœ‡#Ä-„€cBƒãÛ™ÌŒÇ3Ó=ÓÓÓ÷êºWíÚ·µ{w»fADIK{×VÕŞÿµÖÿûÿïÛ‚oÕçÌ¯BªU’Rmª¥5!%V%0Â–Áÿş/=Jü§ÿyê—+@5¤#sõRÑ=_*¸'=Ïi”‹ë8’8Ñv<NzqªwFAtsÄo¤Aü½`×‰éü¯ÿĞ§~RãO]¬Tü./Ô¾åtãÜ…‡ËçÎÌqryšF½D±à"¥$Õ†`ÓlØÜéqc½™^[İß¾~«ùòÖN÷/F»í9óL×H¿Å Oş2ôFBÌÖÎÏÖË?ÿø#Kıî§W–}êA8Õ RòPR ¤@
+±£MşÙõ$Õô!×nîñòëëãøÚ­|óÊÖ'›W6şVÔJcÛüƒohµòkhm*å¢÷?²ô+?ò‘Çøğæøâ4ÖZ´6¤Zc-(%ñ\…6–4Õc'&‚£	kÙÚëóÂK×‡ıÅ·>õÊk·~ï©_ù¾_şÅ?†øÿşç@»+ÿ©\Ò4=>3]úí|öÂıÜ¾Ï?¾4…R’‚ç`±ãm,’Xk±€£qbîy˜ãÈ¿ I¾«BpåÆ.üÜ›—>ûÅ«ÿs÷µ?}ú,Oşë‹øoöÏıëbŒ97ß¨üáÏ~üÉş¥Ÿ~¿³0W%J4Xâ€©±ŒsàA˜Ç€(N‰cM’h’T)%Á0ˆò©æg*<úĞâb¢Í³·†ıÑÚÚNØÒ}å?º¸ôA´±+å¢÷‡?óÑ÷>û³RøCª-2ç¨´Éé‘‚(!ŠSÂ8!É©‘jCeßãD# ßsB`ŒÁs””8Jà{.+gÕaÇjßìD××.—ÎÿIó+ÿ>èÊÅO`­w”üƒ|àü‡~áÇŸÆóZ[¬%_åŒYq’Òîùƒİş˜q”'&ÿ½%'$‰!I²É8Jâ¹NB	Œ(ÖøËÉcõÒÛÍ'·byÕuÕªÓø{€èÊ£¿‰±ÆˆßºğàòOÿÒÏ<#õÆ’QÁB†WjC’”ŒÃ˜å…RJzı0£D¬ñ\Åpçôˆ#3ÀJJD>ù(Ö¤©AkCµäSğêk—ï^ã¿wÙrç¾¤ùÕo]yô7Ra­ıÁÆtõ·ì(<qñRI° ¬…$Ñì4ûÜİíÒë‡ôúc¦§Jô‡˜›)óÀ©aœÒlˆcë(N,ÕqE¥aŒ±–Q `ŒEkK£^æÚêşâÆv§,„ı‚^ïå›Aûß‰Öf¡à»¿ÿäÅ³}ğÉhÌ–0Æ’¤&£!`¯5àöV›`œ0G„‘¦ÕØÜé2bFAÌâ\…3ÇëŒÃ”íı>Á8A)I£^F İAF¥Á0bdñ$)JJ$Š7ŞÚZ‰’ôŠ’âš7ÿñşKï€®^üRJŒµ?uziöçŞwñŒ<÷@ƒbÁ%NôX€ş0âÎv›Ş $M5Ijò‰iFAL’fTèÆ„QÊÍõÂ0Åuq¢©U
+TË>ß¥\ôhuÖ7[„QB%‚˜‚ï¢¤âöFÇÛiöf­µŸB„ñşK8“+mŒi()~b±1¥J‚ï0³m‹ã”8Mñ=‡««»ôã{%ÒËn5ÅG“b´¶„aÂ0ˆñ\ÅÅs‹œ>^ÇsÆXÚİ1z%[Y)£”4X!à‘³KÜÜØºİ~PJñàĞY@Ø÷[Ë»:ıÑQÚ‰ÍÎAŸÍİIª9¹T§İÃä(ˆ ´¶¹ÏH@[£ ÆZË0ˆ©×Š,ÍMQ)¹ø¾ƒ1Ùu5Ôk%´6¼lgÃ(%Š5õZ‘ÓË³ÅNô1­“ç«3‘Y ~‚8ÖÄ‡……Õ»M.İÜ`§9 I{Í>í^€Ö†q˜P¯•0Ö„1Ã bÄDIJo„1£ñáˆè£\şï}ìs³e’Ôpï¿£õIbHC«;¢×QRrfy–¢ï>mQg@dœöA)1/„øu`AëLÆúÃ¹z…j¥ÀÂl•‚ï²½ßcvºÌùd¬?Ì¨Œã£Ä’É[ŠR¥²dô'È²¨Évp0Œ³L™˜#]OµEËh³z§@âHÅÆn»2Æ_UR^™äôiàäáÜÙióé/^â©w¦ZöYœ«Ñ†¼òæ:gOÌÒê€eÄ„aŠ±Y29º‡µø®ƒÈ©bH)ĞÚĞ$$‰F‹ç*âXélG´6$±e¿5Àw=\©(<G Ş%¥øSg‚ÏgJnÆ1Ëó5Ş¸º‰ÖšJÉçCï„™©2µJF½‚ç*vaŠÖæ(KŞÚK)<v›¶÷{<|vÁ(Æ‹±–$ÑDqŠë*§™úƒ˜™Z™7®İ%I4›û¤iÔ¡>ƒøğ½‡“ĞÚ°r¦ÁÚ6ÃQDÁwÇæ§y÷ùãœ9>ÃÊ©9VNÏÑêÄIJeZ›ÓÃrzùÜ¼}€’’ãËÓ8Jå)=ûMkâXãûŠÁ â Œ¥˜©•1k›M€>ˆOMÒczr•ÆaÂhœ°Ğ¨²¾Ù&Õ†ş Äøøò»Iƒ@P*¸|ìCÑù?öUÖ·:™|	(úB€Ñ–Ku<×åSs™jÅc¿5ÄQ’Ç>ÆÂl…(Ö„Qæø¢Ü!
+!pÅÖ~cBˆ)!„7	ZŞ³µÀ­gOÌpg«C»;f&<ó¼°)ÁóN.Õùî§VxîKo±ß2
+Š—aâyŠåùWoîrg«C4ÆuJJÒÔò=OŸc¦†1å’K©è2SÂ(áå7WYİØ?”WqNßÿ‘B°»?àá³ó,ÍWÙŞïÇm`<N±ÆfNX‚­O?q–Ç^fm£Ås_z‹úTGÏ-òÄ…ã|ùÕ5Ö6Z´zõZ%%^À­íØ¬ët5µšO»;æëoßåõ·î0ÛÜ:>ªXE’j´1¼½¶Ï…•š­!‰6¬mğ¾ÇNaÉÌÿQr)dÊQ)øöÇO27[áÕKwøá=J£^Æu—¯í3F”ıR
+ä”díN‹¯_ÛæñsËXa”â…ŠJÙcç Ÿ- ‡e[˜	JØ=À
+!ğ=…Èk¹­ı>ıaÄ…‡±Ærõæû­A@‰ÉL”8ÖDy&ûçËwY»ÓÂu2{ãHIšŠ¾Ÿe»(EIÉt	ÓÔ Mæa:İ1Õ²G­RÀsj•â!ÈkM8ZÜÎVÛâyRÊ£ºîÒµm–çªœ:Vg¿=à/¾p‰Íİn¦§i–¤Oô 3äï^¾Á8Jxñ•U^ycƒÏ¿tL×Š()²ÂW*EŸ3Çg³¤’f¶4ãsŠ£=tŒ'>‰Êğlhm†òPO­µ·²™dÅ§ï©£íâ”¯]Şäİ–iÌ”ùçË¼ğòµ¬|"K6{¨ãH¾~m›8Ñ4ê%şÿ_¾Îß¼ø6—®íâ:ŠéZÙz‰bÁÁÚìŞã0%Õæ‘Z.]ßÆbyï…Sh“í‚µ\qGO‚¾\·6óÕ²Tª!8hxãê6O}ÛiêSERmp”D²­M¸u÷€¿{ùçœçæz‹ LòBøp]E}ªHµâ„	wwº¤iV¹¤©!I5ß¸¾Åül…‚çrw·ƒ1v¼nm.sÖhübiöË Q”R­øxw·»\½±Ë³O=ÈÊé›ÙHm0Fãˆÿ÷é×(øQ¢ÙŞëã8ŠÁ(Ì=ù½ÙR‹ÅĞl³¸È}ùîAŸ;Û¬°\^Ûb»ÙC®ƒ¹&=zë÷ğÎü<F'_ öÇQ‚‚™éâ½2(«wZ¼}«É»Ï/Sğ\W1ß(3×(±×P)8wfµ;m<×¡RòÃ DMt™¶›=6÷Ú´ûC^»²ÎÍõ&ÖB«;âå7WG1#xóÚ]‚0ìƒË¿ÛœzÿïIØùóYéÎ¾ïzaé»^JSçcÃ ¢1“¥ĞaQÅu$ƒaÈÍõçX¤1[b®QÂ÷.¬Ìã9ŠÏ~éXK±àP-gj1†a„Ñ–ŞpL4FëÌè‡qÂ•ÕZ½€oÜØbc§Í…•™Ó»k“şó ›ŸBæ!7i½ŠİıŒµ¦ßí‡H!X¯Q˜Hœç0U-Qô|:c¦k>Õ²‡ï)Îœ˜Áu$J*f¦Ë<7‹‘™°$Ñ„qB'xsT‘.—nlòü?\f}»Ec¦ÌÉåiv›Â8ÅêàóÁ­?Z|@Ê‰î•pó¹ë&î~y&tzc*eãKSG–RÁÃóa”0Szƒè¨_—jC³3ÂZÃâìsõ
+å’‡‚‚ïd«ÊÎ}_á¹½|ïĞ¾ZæfÊ[¨Ñ¨—¹~«	&ÙJÚ_ÿ¬‰;^Z©ÃUŠ@Íš¨‚‰†²tò]±µJÉ§Rò)—<Œ±øÃüL…K³¸J‚´GœfkÄö^ŸNŒÖY52?[¦Óc¬…¼…¦”È}KŞ©²Y+mfºÄB£ÊÃgçÙØîòÖên¢‡·ş$Ü|şŸò>p¤Î=œ|!é|ã@æŸò½?¹×”N«S¯•˜®‰òŒ5–45ìîèö†AŒ‚+×w™›-S.ztzc¦k¤ønVfš+‘Ò SGIN›¡Zñ8sb†Ş äk—6Ğã½¯EÛ/üSÎ7Ç(ÕàB¾Úe ¬GCéÏ8Æ™9ãºš®(\¦ªf¦K”|—‹Ó«¹½ÙæÒµ]*eŸş0b·9`8Š™Ë¹Yğ¼eàà(…×‘”‹>*Çj_œâÔ±:›»=^|eQïF´õ¹O™p¿	„À‘3áDu¾Ù°imşeÏõ‹½ÒÅï¬–|gy¡†£®£ğ
+‚cÇ*ì6û´:cŠyu=;]ÊÊ(UÚë[]vöT+ÀÓÇ”’95²®ÕîÁ€ıÖ·nîqmmŸpØ¼ï|á3:¸ÛÌq%9.X5Ñ:>äöáğ°©Lú·v½ât*ıÙcrİjÅÇU’‚ï`¬¡ÙQ*zLå˜…FÊEKYÓİ˜Ì›còö@V`tz!Û]¶vûlíöÙÜéÚawëíşúó•Ö6òÕí=`ÕDc]Ü78Ö¦vÜ¹¾-¥è¸¥ù!½r¡àf%SjréRøÂqKóU¬…RÑcq¾J0Nñ<•%"G!e–Ñ±QB¯ÒêìôÂÎŞµW›7>ı¹x¸¹“ƒìíü8Èé‘Şß5µÇ‰²Ú0j¯í‡ƒíÛ^qÆ‘ª2#¥ãN×Š”K.®#ñ]—™©"npúDÅ¹*•²Ö×Qy·U0[/1ß¨Ğí‡Üİî±w00Í½í­Õ?·ıös_I£^;_ÙĞÊ= ÈÕCßÚäãß‡\Ò€	GƒƒÍ7Wãx¸©ÜŠòåj¹Xğ<×en¶Ì‰åi<Ï¡Rò(3‰¬UÔªY»¢Xpé"Öî4ÓÛ·ïlŞ]}õïo¼ñgŸkm½yÃšôìA>Z9àå8¬¸ïıË$·@	¨µüXÍÕÅ÷üråÄÙ÷œxğ‘'ÏŸ8õĞÊüüÜ|}ºV®”
+N©è¡òw/Æd…Â(ˆL·7ŠöZ­ÍõõµKW×oüãÍ~{³•«C s÷óóC°É!àûAó¯pÚÍ³P1Ÿ@%?–òkÂ¯ÔÕ¥ãÍ._Yh4–•ÚtÍq\…c†A·½ßŞİ¹½·³y£Ùjntus@‡€Gù¥í‡ªñï½İé]M$b&Î…_åCLÜÃŞ'©‡M€&Æ=”¼/ÖşÃï'MÕa"r&&âÜZNüçğ÷ÇÊd¼$×ÌÄªšĞ¿ u”¶°j   YtEXtcomment File source: http://commons.wikimedia.org/wiki/File:Crystal_Clear_app_browser.png>1À   %tEXtdate:create 2008-11-01T19:42:52+00:005mîø   %tEXtdate:modify 2007-01-23T22:32:06+00:00 mej   EtEXtsoftware ImageMagick 6.6.2-6 2010-10-23 Q8 http://www.imagemagick.orgäÏ   tEXtThumb::Document::Pages 1§ÿ»/   tEXtThumb::Image::height 128!BP   tEXtThumb::Image::Width 128Ğİ   tEXtThumb::Mimetype image/png?²VN   tEXtThumb::MTime 1169591526fÏ   tEXtThumb::Size 17.6KBƒò
+   StEXtThumb::URI file:///mnt/upload6/wikipedia/commons/f/fe/Crystal_Clear_app_browser.png£uÂ÷    IEND®B`‚
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/60px-Crystal_Clear_app_browser.png>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-Record-ID: <urn:uuid:a53d1ac9-3715-47d4-aaea-6c6a46dc75ed>
+WARC-IP-Address: 208.80.153.240
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Block-Digest: sha1:467GKYYSM7CIXBLKJEEQGANZUZDOGTFM
+Content-Length: 292
+
+GET /wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/60px-Crystal_Clear_app_browser.png HTTP/1.1
+Referer: https://en.wikipedia.org/wiki/Web_ARChive
+User-Agent: Wget/1.20.3 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: upload.wikimedia.org
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:4e918139-4eaa-44a9-a73d-e403cabc7688>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:a53d1ac9-3715-47d4-aaea-6c6a46dc75ed>
+WARC-Target-URI: <https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/60px-Crystal_Clear_app_browser.png>
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-IP-Address: 208.80.153.240
+WARC-Block-Digest: sha1:3VK6PEZT45DKT4E4SFRYXFVWV2YSTAOY
+WARC-Payload-Digest: sha1:7DNEPCX5BIG6KKRM2KMTNP2CZ6PCMGGP
+Content-Type: application/http;msgtype=response
+Content-Length: 8875
+
+HTTP/1.1 200 OK
+Date: Mon, 22 Feb 2021 15:19:32 GMT
+Content-Type: image/png
+Content-Length: 7767
+X-Object-Meta-Sha1Base36: t2h4cdh6oyvq6nsupyvsa9xooqy7t1r
+Content-Disposition: inline;filename*=UTF-8''Crystal_Clear_app_browser.png
+Last-Modified: Thu, 30 Mar 2017 18:38:10 GMT
+X-Timestamp: 1490899089.69373
+Etag: 6d0f4ec28e510c9b73da193c8100d1a4
+Server: ATS/8.0.8
+Age: 35333
+X-Cache: cp2040 hit, cp2038 hit/1
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 86400, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+NEL: { "report_to": "wm_nel", "max_age": 86400, "failure_fraction": 0.05, "success_fraction": 0.0}
+X-Client-IP: 70.39.116.210
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Age, Date, Content-Length, Content-Range, X-Content-Duration, X-Cache
+Timing-Allow-Origin: *
+Accept-Ranges: bytes
+Connection: keep-alive
+
+‰PNG
+
+   IHDR   <   <   :üÙr   gAMA  ÙÜ²Ú    cHRM  z&  €„  ú   €è  u0  ê`  :˜  pœºQ<   bKGD ÿ ÿ ÿ ½§“   tIMEá&	C
+te  ÊIDAThŞå›Y¬$×yßçÔÚ{÷İ×YIÎ9CR6I-–F²$Û‚bA oÈb½8bÄÈC E¡“ 	œÄÎC? A€ ‰Á-Y‹)‰29â"gHÎpf8ûİïíÛ{umçœ<TuOÏå0";1ÎT÷½=Uõ¯oûÿ¿ï\øÿì%ş²N\>ı,Zk[J9bI)}Ü³j`AQ`€AhczÆ˜-!Ä!ÄuKŠM­uSTpé_ÿÕ\|ôË ¶ò˜RúãBˆOÙ¶|ÜóìC³R©ZöRÑå’Gµì#Ä‰¢ÕˆâTwûQ²ß	znx+NÕq¬—‚sRrG£ã+¿óWpùô³CQióBğ¥‚ûÙÕ¥ú¡Gš³~üô
+§Ï±²Xcª^¤^)`Û)²KZ†aÂ~;`gÀ­µ.opáÍäÊõİë»ûı?ã?Ò©~UZ2Ö×÷ÿ`ÿÔ?F
+<mÌ'lËúõ¥ùêO}ø‰ÕÚÏ~ú?~f•åù*-R`ŒAL\NkƒÁÜw>KJdş]¥^È¥w·ùş+7ùŞË7ö.^Ù|n·Ùÿª5x•‚›²öïşï ®œù-zo¾ˆê#H!~su©ş+Ÿ;{bê>ÿ8=¼@ÁwĞÚ F«– ,KâØHEªÔ}· Fÿ2à€Ì½µÛçû¯İä+ßxkóÜùÛÿig»ó¼ÅÚİèV¶ÿ/pé±ßBÜ4U?_)ûÿäÓ=şø¿ğOZÂ÷ÛÂCªô8FÉ@Û9`¥5HR1æ×±¤Dƒ r÷÷›­½_ı³Kú¿ıÉ…so\ÚøçáİÖóT}Åæï} û·>0Rë—)=ö×1FUµá.Ï×~û7şöÇüƒ/~‚å…Iª0¤”‚ÌBQ”Ç
+¥2A˜Å)Je@£X‘*}ß½ReBF)IªQÊPô]?¹(N=4(ŒÕg7Q8l÷/26¥ıÒ_`ÿä—),Ì`Œ™Eˆsâèìßö7>SşÂçÇól´†(Nq!DnQƒ1 Ã¥³äF)iªIS…eÉLr¬R[] ¶e1âDa[2‹}sÓe?±XÆÉ'oíôüá0~Õ™;éæ‹ÿç€‹ŸÂ3gàß?4ıÅö›?íœ}úFgÉ‘Ç¨”YB20òT)Á0FiM’êÌºZ“(%qª‰ã•ƒMÔÈ’Îø|IªPZSğ\„XR … è»œ86çöƒèÃ·7Ú…a˜œ+,|2Nv¿ÿ¿¸|úYŒ65¿;Ó(ıê—şîOZgŸ:–[‚ÌšÆ ¥„¨1†(N‰E¥Äiæ¶A“¤Š4ÍÀ’Y&¹Õï-)%Bd!"…Àul„®ca´!I5Eßáá#3ÖÚVç©Ûm+IÒŸLß´õ¿û[€p…ÿ¨à»ï×~ñ#öÏ}æQtÒŒg7.„@æiµD´»C<×¦\ô‰SE§æÌÜ×hƒ‚`˜ÜÇy2=HÛÊ2û(ñ“Å¾R­¡TpY˜­Xo\ŞüP»¶„¯yógM¼óÂ\|ôËÌÏÏ1¿lYò_üÔGO”¾ø…§q+‹±I°y&5“ UÏ±q]‹Á0¡Xp˜*‘$Šş "II¢HR…çÚôƒ˜$½?qÅqŠ”ËY)3Ç–y¹3Ä±ÊŞkƒÖ0U+‘¤Ê}ãÒÆ“Jé7]×¹.§>J²ûç÷á’ïëë–Åîîîi!xö¡ÕÙÚÏæ4Eß!Uk‚(mHSMœd®Ú"®İŞc}»ÃÖn.iª¨–=
+Ë–x®m[¸®ÍL£ÄT­H’(Â(!ŠÂ(¡à»4ª|×ACªƒaŒ0b¢8EkƒRfœÙ?ı‘‡9¶:½üÓ4MV-K~0—O?Ä¿œ®W~úg>ö(Ï<¹‚ïÛ8…RÙ…&K¨ĞD¬o·i¶:ıN/d¦$©b$\¿İ¤Ù
+†) 'Írx¹A­â³µÛ£ÛI•!I323Á`ÓDÄ±"È3v+¤Ì³¶¥¾ï2SÎ_^_QÚ„*Ußóæ?i&ãÙz‹Êj©øk®c?ûÌcG½'N.sdµïÛÄ‰"I4ïáÖw:¬owH•'§Ti¢X±ÓìÑî†™»&Š(QÌO—™i”QJ³×ĞíGDQJª4Õ²‡ï:i¢Øk°-I·"ì6ûXRÒ„Ø¶•åm(ùï¼»#v[ı‡,)_B¬yógÅ³ı cjÀ¯¯Ì7ªÇWg)ø6¾o337%¦{ß‡^±ÓìEifî‰—cK‚0“ÑëÂ;›ÄI×ïìS*¸Ø–¤ÓYÛìP.xLÕ‹|—£+Ó`°¶ÏµÛ»ôQ’Rğ\Zİ}fêe<×¦Zöø±S‡¸½¹¿8F¿fŒù¡"]Ó>˜•sâğiÛ–g¯Ìâ96¥’‹”‚(È‰ ô;İnv¸qw/‹«¦BP.º‡É{~·¾•E)cÑÜĞ’CŠ‡©z‘ÕÅ:KóUÇ"I2šÚëGÔ«EÃ$KŠÍ0Jhw¤ÌMU0ÀÂL‡Vç¸põîÏ
+!‚ØRÆ“Òú%)DÉ±m‚‚oç¥Ã ´¢Ó‰â„Ş di®Æv³Ç~'sŞƒ€ä„Ã¼'zƒˆFµ@”(@„1RJ>òdjÅKÉÁ0¡7ˆñ\›CKTjÆœ}q¦6N`J,KòÈáyŞ½»3ÛF_ÁKŞ‰/™èÊïÜXfÌæ1!ÄÙTiÖ¶[Yœ¢Xt£cÛÍ×nï ´FçÅ?ŒÂ(kÜûC¯FY8Ü×`‚jÅ'Î½ÃsN›£Xp°m‰ëdi¦àÙ¸¶$ŠRŒ˜Y…Ìù¹Î~o³
++sŞ¹½õ¹b±ğï[Ñ¤…Ë§ŸÍİGı$°påöÕŠÇ©“Ó,ÌT±,Á~{@oaYKJÃ×Î8t&c£—çÚ†	A˜<P’M+¤€§_äÄ±L^c'u6&™UnU­³D¸×îƒÊx‚c[]áúÚîñT©	!nİ—¥í™O ”ö¥”_ÉÔŠ&L\Gb[6SõƒaDoòÈá9,)IÅ¡¥«‹
+C’*zƒ(ËÔI&”ÖôúÑ˜aM®$ÕÌN•ØØîÒ¨ùÌÇÆ÷¢¼ìH)HSM¦D‘"Œîe:çŞRzƒˆ½€$Öãäzk³iÃ¤†ÑŸxóŸ4ö=w!''Å²‚V/à+ßºÀ/}şC,ÎV™m”©”|.[lîvYÛnsêØ<OZÆ3®«;ÍŞøÜa”ò Ç²$ÆÂ(ó Ç–™”‚TiöšÃÌUãÛ¶(º½(³¶š°´6H,®ÜÜaºVÁ’’rÑg¶Qf¿38ãyŞ4°kOÆ¯1æ0°4éGQ”R*¸œ»}‡¯ÿ'ÍS*¸LÕŠ?4CµìóİW¯ñú¥5nm´ØÛïS*º‚˜0Îê­ ŞGç#¥ Ä£”8Qc7ö\‹(ÎØWªÌØÊoS,8´»á„[gü;Š®msg³É‘¥’TDÇq0‹Bˆ{€³küÉ„3ÆøƒğÖµ­ÌımI¥äshi
+(e˜›*²2_Ã’‚n?d0ŒIõ#¥çˆ-ieØÜé±ß8´ÔÀ“wKî)2¥½^L¡`ã{68Ìe¥¡?ˆéõcægª¼ùîÛÍ½AÈµ;;AÅÇ1\YıJ%¿â'&oHkÍáå©ÒÜ\kaŒ¡\ôP©¦\ô8¼”%´G/ğÈ‘YN›çñ“Ëx®Å•[»y'kõLÆp¢²ŸûÃò|•ífŸí½½~Äã§ÑÚ¦fB ˜±f†)¾og…0%ŒRš­!Q¬BPò]JTnoìrÕËBˆÜ£–õ§…”Ö¯gîlÀ÷l®4¸zsA£Á¶-îl´hu=¾@­ZÈ,f	<×bªV¤èg$¢Ûiw‡c¢?Z¨W
+]æöz‹a”²²P#U†‚Ÿ±®0JéöÃqûm¤—‡aB©äÒ$ìîD‘»·ïº”|ëk»¬ïvÈÄœ¸ |{ìÒ¶í ”ßãrBp{½ÅSgV(]AÂÚV‡0J™™*qıîOŸ9Dµâ#aHefıÏ|ôa¤%øêóoó•o¾ußymKâ»Jk0)$'Îsh©Á/ßäüÛë(­Ùiö‰¢”ÃË:½ÊÌT¥I¢ˆ÷<×B)±˜‰Plõnm4ë×›ı#Ûšºı.™áüÛh;Í>ƒ æñG–˜ª•HS=Ñ0H‘ÑÁ‚có±áµ7×¸¹¶?kÏµI•B£¹~wÛ’Zªóö•mvš}^¿Ô"NR,KRğ\Ö¶Ú}—?UÊ-œÒÄÔªÓk›½qbÜÚëòİW¯°ßî¿‡ıÉÚ´¼øÎ&'Íá{÷Q?ˆIÓLŒg¸{s¤”ÒT3;Uæ7ÿÎÇù¿ù|şS§(]zAÄêbÛ’^iğñ§rw»Å+ïpcmıN€%%ã°ß	È0L	†	a.döšÅ‚CÁ·C«ğ­s—¸¹ÑäA…ÁşQÖÍ<B°¹ÓcDœ9¹È«îæu´ÊúWfÜö±î±-!ÀËÎ1Ó(³8WåãOáÃ¯òıŞ¤^õyêÌ
+Ï<qˆ4UtúïÖJì¶úØ–ÅÜTcÁ0¡7ˆøúïd:¹^Îê°É¨m»27S¢Õ	yãÊë;í¼Iñ€ª0z£”&ë£ëØ÷1ßsçïğèCsLÕ‹½3†óï¬Ñé…(•‘(ÎÄyœdL+#qÃ”TÎœ\â±‡HÍ3O¢ZÎdàg?ö0ó3,‘YvÔh˜ª–˜kT‰"Å«oŞóø—Şo‡H™©2­³æ çÚ‰Îğ>ÀårÃc6'“Õˆ¸êôŞş€·¯nó‰§`Y`}»Í»M0ä7¨ITÖ³µ}’DßsûTÓîùão½Eo¸)A§X–…ç8‡™(Q*ë6ªEŒfLPF+Mûí!3Sª¥–”¸õÂÆßlİ8ûÁíÉËgOIÜÇŠŞ¸¼%%OY·c_xí]Öw:9P÷úLišYbt
+ƒÁ¶ß}ù]nÜİgwÀÚV‡N/ds§Çù·7<×ÎG2fìIZJE—Ç^@ 2Ñm Õ
+qÇ‘Ø–äèò4§/î?îŞ'¼ù³#¦„à€-¤ ^-0“ûT‹Ö†Í.gŸ9Æ`Ólì¶úÜ\k²8[eº^?Ç¶(—\lKd“ÛBcøÃÿş
+İ~È“.óÚÅ»´»C~ğú.gL®àg3ª‘ÆÅb¹àñØÃH)óZnòiEN¶#9ù.õr‰Ÿ|æŞ[ñè‚ø=!Ø”6ÌM`sôÙ’ß³4ëínÈ·_ºÆÙg±²˜‰ïw›¼öÖİñÍ¶$Bfî7âÂßæÍ+›llw8}b­5/¼rƒ›w[\½±G0LòAš Xp˜n©–=¤hU…f;{‘Ò:—‡àï¼|¤ay®FÑwÙjöFÆºiŒÙĞÚÜsi%‚»Àµ‘%•6ãIıAÂg½Í¹ó·ùÜÙÌL•0€ãXXRäÍòŒš|,¥d¯5à«v‰rÉã‘#³¼üÆİ¬tÆêàu*ezÍÇ¶Ã0áÖZ+½ä–ÉÃ(N¹xuƒ™F‰ÃKzı!;ûİÑ©ŞNÓtOk}°t*”k1æ…‘0¢”JÙÃu­ªœ·¯nsşíuşÆÏœfi®J¹èåú×Œkq’jŒ† Œøıÿü}®ŞÚåÃO¬réÚ6íŞ™ÏŠ¢8yÿÙ–ïP){X– ÓæS‡¼æë,÷Z}Úİ!R
+”ÑÜÜhÒê!”1æ»ç¤Á¥upï/“È0êy`AcÛ’Fµø¾Òîõ·7xíâ¿òsOpêølÔ yWDP.¹¼øúMŞ½Õä#O&U†wo7±­¬„	ÛÍ^> Ÿäñ†8Iiuì¶º£ˆ­f—İıŞ8vµ2£„WŞºE§7DxûÆ:ç.ŞÌh+ÜÆ¨U~Óûş·D2X{Ëó‘ÏnÃ(aºQÄ÷œ÷%'o^ÙäKœ|h–r)“’õªÏÒB…ù¹2Ú(Z!?öè
+'Íráò&¶%qm‹JÉË:¢qB0ŒÇ“A)iªØÜí°±Ó¦„ô‡!Wnmñ­—Ş!Œ²dcÎ]¸Éµ=JE—ZÅ§ÙØkõGÉçÃæù›İ×¿$&³´íJHÛSwæi_HçsÆË±-êÕ–%é¢²—ZÙGiÃl½Â™S‹LÕ}æfK,Ì–©U<†bÁåØ¡i^{sõím!¥`ª^dº^bm«“ÉE7Û.1Œš>İAxo^,Z¢X17U¡ÕòòÅ›¼~ùBÀC‡§9~hš×ßZ§7ˆÂtMüvxó¿\É­IÀ2§š.Âi[Ååa­(•µlŠ…ìFÃø=jªQ+27UáäÑ’#‡ê,Ì•(ø6“uUŸõ­..m¢”Î÷of§ÊTJ.;İL6šÙïˆ…"«¥Fd]NK²ß¸|s›7¯­³¶İs3š¦Xp9wşvFsUòÍhóÛ Ã­d$§ä„uG€ıxç…@·¾‚1Q'´{u›Ÿ)3U¿?ÇÂ÷Š¾‹c[$‰bÄãÏ&Ò4Ûjå35ê•"cS.yh“MúÛ¢Tt™ª•ÆLÉ±³}!¶-±,++wºı!Ã(KtÓõ3S%–çk¼sc—8Q`tWwÿ(i½‘Nn\!',lnŞâ)…ßxU'İW2®F)¶-Yš«2U/æ“øŒÂ<›(IèôB¢$œõY£Íä«ÛËæÅí~€çØÌOUiÔŠ”‹.F\ÇÂu2mÛ±­ŒÚ:¶…k[‹²%mã86ÅùL£Äül…©Z‘JÙãÒµm âÖ·‡kÏ]J€—SZ¹e­ü)x@(›´ï"¬UZùPªD1™d¥¡\ÌÈ@ªô¸»Ñ¨•XŸÂ’’(I¨VÜüIfïVwH³°¹Ó%JT¾İ!ei®J?ˆ",KûÏ#W2?\[@0LHRÅìt‰ù™2góÔ™e^½¸Æµ[{ŞŠ¶¿÷jp{P@š•5a]'·nqZë‘åÏÚÒ›9ÅÊò\;§}’zÅ§XpA±¹áòl­¶#†1İ~H«3äöz›KW·ÙÚësêø,³Ó%†QBD]bg¯Oœh¤%°r#ù9Úæ Ä½MVJf¦J4j|Ïæ©Ó+ì4û<î:F¥AÒzó¿Æ»~1™L¬1`™»³w?hSPƒµ}«¸RÇ®¬F±Õ’—õ›ò’R«ø”Šn–¼Ê%|Ïav¦Èµ[;!øînĞlhmxëÊ6{­ Ïµ9²RçğrƒÅ¹
+ë[]’Dgş @Š¬/ò%„@0âæÅ‚C¹à±4_å©3+lìtyîùwˆãD¥ıßŠÖ¿öŒŠ€ÑJ€H­	Ë›X>à£cK7wìÒêœ°ËsZkjß³±ói~£Z ^-à96Ëó5¤¥q]‹·ŞÙf·ÙÇX]¬³Óì£5tzC¶vûØ–de±F¥ä±4_¡ZÎmgd„ !®kS­ø,ÎUX˜©0?SæÔñ9¦E^{ƒçÏ]'FFk¯„kÏ}Í¨ —'V¤÷+üÜÏ,­ÃN´ñõç¼#?oGñÒ‰í½>‡—ëø®QIeğ<ai–—K/şğİ~ˆï9$iö ÊE(Î&:—’wÖÛ\º¶C±àP¯˜Ÿ)sh©çÙm ƒíXã~Ùö^Ÿ½Ö€+7v¹³‘iñ8Nnœ×¾öu“tù47Œİügæ`¶rKÛyL;£Ï:éÆj¸½^¨­6¤]šÑQ*z<ËÊC±à°8Wf}»C³P-{”
+.c17Q»$É¦¶e±ºTGkC¯e-‰0a0L1ıAÌ`3SÚ![{=nÜİçú&Û{}ší€í.Á0VqïÎùşÿñ5íîçÖ€A~ònG4éÒb¢&€ã¥âNwoİ)Tæ=Û«Ï¥©±|Ï¦ègÆlKÒê„ôúeáºÏ¡à;4j¦E”2TJÕ²ÇñCÓ‚×µ©”¼,>}'ÛÑ'3V•íöÑãş´R†n?b{·G0ÃAóò‹­ë_ù¦ŠöÛ9ØĞŸXƒp<™´´éôàC€TÉ 4¯Şr¼âĞ/ÍÎ¥JúR
+ƒ”Ymö];'
+[J,;K:‹súƒ!¡Zö©×
+ì·,™ï®“£Ò#˜œ»&©¦?ˆÂ„½ı€f; tv÷×^úÆŞõç^ÒÉ Ÿƒê½LğÓË?ó‘ úGíÄ3z¯U¬º»—×Ó°³V¬Ì¤]j¤ÊXRJJÏ³±¤À±m,)q‹jÙãá£3,-d„ci¾‚™K)îí¥Î	ÍT½@¡à0Sš­ÍVVÇ»½AÔmŞ¼°véŸÛ¿óâe£Óajt´FÖ%,5ÃAš<ÈõDÀO¾7`tĞYo57ß¼&¥hzÅz	ÜJ¹äË¥¹
+maY’jÅçèJƒãG¦)]f%¦ëj•®c1;]fºQ¤Vñ3¯’åÅÇMS)yìµ®İlÒêôãÎşÆ»kW¿ó§7.üÑÃîúÎ„U»@gbõ&ÀFyòÒ€påIæå…¼.—òqE)_Å¼t¹€S©/Ö?öéS«Ç>ôøÂÂÊáÙéz©^+07]ff*›39NÆ•CfliÔ]Ió­½AL¯±»?`k·k¶w[ı­;7îŞøá·ŞùŞ•a¿ÙÍ-å€ƒñpãô‘˜‰˜µ'(§?~´
+ùòràv¡T/~èé•#ıØ‰…¥ãÇkõÆl¥\©í{6®kc[ÙF“ƒMRE%Ã„~&İ^¯Ói5·77Ş½vçİ^]»ùúz‚	N€\áĞdäÆë}wÄ‹ÉÊ°ø$øÂ˜ ÜífßN¹Ò(.®œ˜^\>>3»ph¾V›™.•kUÇq]‘·m†(Ã~¿Óé´v›;[···6®ïn­_İİ`ÂJñÈÄğ ±ˆ'ê¯™Ø]e>ÈŸ ˆn.Ôhwâ¸Í=PÃåd‰rÄ’Çç7ÙK?ˆô¤V'¨b<qœ´¦štßI÷ÿÍÃƒ€$)“DÅ™ølOÔñÉÿ+~D’T–J€tâø~ Í_ÔyˆK>ˆ <`É5}òÚ“€ÍĞï·ôïó£€^ÿ,÷k(L¿   ZtEXtcomment File source: https://commons.wikimedia.org/wiki/File:Crystal_Clear_app_browser.pngœ ½4   %tEXtdate:create 2017-03-30T18:38:09+00:007ÍíŸ   %tEXtdate:modify 2017-03-30T18:38:09+00:00FU#   MtEXtsoftware ImageMagick 6.8.9-9 Q16 x86_64 2017-03-12 http://www.imagemagick.org¬/Cí   tEXtThumb::Document::Pages 1§ÿ»/   tEXtThumb::Image::Height 128C|A€   tEXtThumb::Image::Width 128Ğİ   tEXtThumb::Mimetype image/png?²VN   tEXtThumb::MTime 1490899089øÑô   tEXtThumb::Size 17.6KBBª¥İ    IEND®B`‚
+
+WARC/1.0
+WARC-Type: metadata
+WARC-Record-ID: <urn:uuid:58b24601-9b6c-4bca-bd39-ddf874f7867c>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/MANIFEST.txt>
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-Block-Digest: sha1:M67GQ53KU4JHZB3APYNHCYI24JXZYYJJ
+Content-Type: text/plain
+Content-Length: 48
+
+<urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:0b049ccd-6a53-4fef-917a-6f041f083ce6>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:58b24601-9b6c-4bca-bd39-ddf874f7867c>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget_arguments.txt>
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-Block-Digest: sha1:7A7BOG7SO5PUVGYK25IC6QNBIRLQQWYV
+Content-Type: text/plain
+Content-Length: 108
+
+"https://en.wikipedia.org/wiki/Web_ARChive" "--warc-file=wikipedia-1-0" "--page-requisites" "--span-hosts" 
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:b3300987-549d-473c-9006-d58847f4193f>
+WARC-Warcinfo-ID: <urn:uuid:e6aab62c-258a-4f55-b09a-5b494bea78ba>
+WARC-Concurrent-To: <urn:uuid:58b24601-9b6c-4bca-bd39-ddf874f7867c>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget.log>
+WARC-Date: 2021-02-23T01:08:25Z
+WARC-Block-Digest: sha1:YLQGJH6VRJQKEHHGIQXZIR2WENWCFNBS
+Content-Type: text/plain
+Content-Length: 5773
+
+Opening WARC file â€˜wikipedia-1-0.warc.gzâ€™.
+
+--2021-02-22 19:08:23--  https://en.wikipedia.org/wiki/Web_ARChive
+Resolving en.wikipedia.org (en.wikipedia.org)... 208.80.153.224, 2620:0:860:ed1a::1
+Connecting to en.wikipedia.org (en.wikipedia.org)|208.80.153.224|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40795 (40K) [text/html]
+Saving to: â€˜en.wikipedia.org/wiki/Web_ARChiveâ€™
+
+     0K .......... .......... .......... .........            100%  455K=0.09s
+
+2021-02-22 19:08:24 (455 KB/s) - â€˜en.wikipedia.org/wiki/Web_ARChiveâ€™ saved [40795/40795]
+
+Loading robots.txt; please ignore errors.
+--2021-02-22 19:08:24--  https://en.wikipedia.org/robots.txt
+Reusing existing connection to en.wikipedia.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 27583 (27K) [text/plain]
+Saving to: â€˜en.wikipedia.org/robots.txtâ€™
+
+     0K .......... .......... ......                          100%  830K=0.03s
+
+2021-02-22 19:08:24 (830 KB/s) - â€˜en.wikipedia.org/robots.txtâ€™ saved [27583/27583]
+
+Loading robots.txt; please ignore errors.
+--2021-02-22 19:08:24--  https://upload.wikimedia.org/robots.txt
+Resolving upload.wikimedia.org (upload.wikimedia.org)... 208.80.153.240, 2620:0:860:ed1a::2:b
+Connecting to upload.wikimedia.org (upload.wikimedia.org)|208.80.153.240|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 53 [text/plain]
+Saving to: â€˜upload.wikimedia.org/robots.txtâ€™
+
+     0K                                                       100% 1.37M=0s
+
+2021-02-22 19:08:24 (1.37 MB/s) - â€˜upload.wikimedia.org/robots.txtâ€™ saved [53/53]
+
+--2021-02-22 19:08:24--  https://upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg
+Reusing existing connection to upload.wikimedia.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 432 [image/svg+xml]
+Saving to: â€˜upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svgâ€™
+
+     0K                                                       100% 12.1M=0s
+
+2021-02-22 19:08:24 (12.1 MB/s) - â€˜upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svgâ€™ saved [432/432]
+
+--2021-02-22 19:08:24--  https://upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg
+Reusing existing connection to upload.wikimedia.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 516 [image/svg+xml]
+Saving to: â€˜upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svgâ€™
+
+     0K                                                       100% 17.3M=0s
+
+2021-02-22 19:08:24 (17.3 MB/s) - â€˜upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svgâ€™ saved [516/516]
+
+--2021-02-22 19:08:24--  https://upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg
+Reusing existing connection to upload.wikimedia.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 2134 (2.1K) [image/svg+xml]
+Saving to: â€˜upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svgâ€™
+
+     0K ..                                                    100% 67.4M=0s
+
+2021-02-22 19:08:25 (67.4 MB/s) - â€˜upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svgâ€™ saved [2134/2134]
+
+--2021-02-22 19:08:25--  https://upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg
+Reusing existing connection to upload.wikimedia.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 16160 (16K) [image/svg+xml]
+Saving to: â€˜upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svgâ€™
+
+     0K .......... .....                                      100% 12.2M=0.001s
+
+2021-02-22 19:08:25 (12.2 MB/s) - â€˜upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svgâ€™ saved [16160/16160]
+
+--2021-02-22 19:08:25--  https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/30px-Crystal_Clear_app_browser.png
+Reusing existing connection to upload.wikimedia.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 3122 (3.0K) [image/png]
+Saving to: â€˜upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/30px-Crystal_Clear_app_browser.pngâ€™
+
+     0K ...                                                   100%  100M=0s
+
+2021-02-22 19:08:25 (100 MB/s) - â€˜upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/30px-Crystal_Clear_app_browser.pngâ€™ saved [3122/3122]
+
+--2021-02-22 19:08:25--  https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/45px-Crystal_Clear_app_browser.png
+Reusing existing connection to upload.wikimedia.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 5258 (5.1K) [image/png]
+Saving to: â€˜upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/45px-Crystal_Clear_app_browser.pngâ€™
+
+     0K .....                                                 100%  104M=0s
+
+2021-02-22 19:08:25 (104 MB/s) - â€˜upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/45px-Crystal_Clear_app_browser.pngâ€™ saved [5258/5258]
+
+--2021-02-22 19:08:25--  https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/60px-Crystal_Clear_app_browser.png
+Reusing existing connection to upload.wikimedia.org:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 7767 (7.6K) [image/png]
+Saving to: â€˜upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/60px-Crystal_Clear_app_browser.pngâ€™
+
+     0K .......                                               100% 8.46M=0.001s
+
+2021-02-22 19:08:25 (8.46 MB/s) - â€˜upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Crystal_Clear_app_browser.png/60px-Crystal_Clear_app_browser.pngâ€™ saved [7767/7767]
+
+FINISHED --2021-02-22 19:08:25--
+Total wall clock time: 2.2s
+Downloaded: 10 files, 101K in 0.1s (829 KB/s)
+
+

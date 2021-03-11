@@ -16,7 +16,7 @@ namespace Warc.Net.Tests.Parsing
             var inputStr = Example.Get("warcinfo.warc");
 
             var reader = new WarcReader();
-            await reader.WriteAsync(CreateStreamFromString(inputStr));
+            await reader.WriteAsync(inputStr);
             await reader.CompleteWriting();
 
             // Act
@@ -35,8 +35,8 @@ namespace Warc.Net.Tests.Parsing
             var reader = new WarcReader();
             await reader.WriteAllAsync(new[]
             {
-                CreateStreamFromString(inputStr1),
-                CreateStreamFromString(inputStr2),
+                inputStr1,
+                inputStr2,
             });
             await reader.CompleteWriting();
 
@@ -45,6 +45,23 @@ namespace Warc.Net.Tests.Parsing
 
             // Assert
             result.Should().HaveCount(2);
+        }
+
+        [Fact]
+        public async Task Can_read_mixed_records()
+        {
+            var inputStr = Example.Get("wikipedia-1-0.warc");
+
+            var reader = new WarcReader();
+            var writingTask = reader.WriteAsync(inputStr).ContinueWith(_ => reader.CompleteWriting());
+
+            // Act
+            var result = await ToList(reader.ReadAllAsync());
+
+            // Assert
+            result.Should().HaveCount(24);
+
+            await writingTask;
         }
 
         private static async Task<List<T>> ToList<T>(IAsyncEnumerable<T> asyncEnumerable)
