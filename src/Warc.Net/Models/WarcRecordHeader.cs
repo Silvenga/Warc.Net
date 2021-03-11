@@ -6,13 +6,13 @@ namespace Warc.Net.Models
 {
     public record WarcRecordHeader
     {
-        public Version Version { get; init; }
+        public string Version { get; init; }
 
         public IReadOnlyCollection<NamedField> Fields { get; init; }
 
         public int PayloadLength { get; init; }
 
-        public WarcRecordHeader(Version version, IReadOnlyCollection<NamedField> fields)
+        public WarcRecordHeader(string version, IReadOnlyCollection<NamedField> fields)
         {
             Version = version;
             Fields = fields;

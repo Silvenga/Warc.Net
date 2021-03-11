@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
 using Pidgin;
 using Warc.Net.Models;
@@ -49,10 +48,10 @@ namespace Warc.Net.Parsing.Grammars
 
         public static readonly Parser<char, IEnumerable<NamedField>> NamedFields = NamedField.Many().Labelled(nameof(NamedFields));
 
-        public static readonly Parser<char, Version> WarcVersion = CIString("WARC/").Then(Real)
-                                                                                    .Map(x => Version.Parse(x.ToString(CultureInfo.InvariantCulture)))
-                                                                                    .Before(Crlf)
-                                                                                    .Labelled(nameof(WarcVersion));
+        public static readonly Parser<char, string> WarcVersion = CIString("WARC/").Then(Real)
+                                                                                   .Map(x => x.ToString(CultureInfo.InvariantCulture))
+                                                                                   .Before(Crlf)
+                                                                                   .Labelled(nameof(WarcVersion));
 
         public static readonly Parser<char, WarcRecordHeader> WarcHeader = Map(
                                                                                (version, fields) => new WarcRecordHeader(version, new List<NamedField>(fields)),
