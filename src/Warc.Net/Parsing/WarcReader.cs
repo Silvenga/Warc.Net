@@ -116,7 +116,8 @@ namespace Warc.Net.Parsing
             {
                 result = await pipeReader.ReadAsync(cancellationToken);
 
-                if (result.Buffer.Length >= header.PayloadLength)
+                // Payload plus two line breaks denoting end of payload.
+                if (result.Buffer.Length >= header.PayloadLength + 4)
                 {
                     break;
                 }
