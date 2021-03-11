@@ -1,11 +1,11 @@
-﻿using System.Buffers;
+﻿using Pidgin;
+using System.Buffers;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Pipelines;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using Pidgin;
 using Warc.Net.Exceptions;
 using Warc.Net.Models;
 using Warc.Net.Parsing.Grammars;
@@ -108,7 +108,7 @@ namespace Warc.Net.Parsing
             var header = ParseHeader(headerBlock);
 
             // Header parsed, discard and prepare to read the payload.
-            pipeReader.AdvanceTo(splitPosition.Value, result.Buffer.End);
+            pipeReader.AdvanceTo(headerBlock.End);
 
             // Wait until payload has been fully buffered.
             // TODO Add support to write directly to another stream rather then buffering.
@@ -131,18 +131,16 @@ namespace Warc.Net.Parsing
                 }
 
                 // TODO handle payload length too long.
-
                 pipeReader.AdvanceTo(result.Buffer.Start, result.Buffer.End);
             }
 
             // Read the payload.
-            var payloadEnd = result.Buffer.GetPosition(header.PayloadLength);
-            var payloadData = result.Buffer.Slice(result.Buffer.Start, payloadEnd);
+            var payloadData = result.Buffer.Slice(result.Buffer.Start, header.PayloadLength);
             var payload = new WarcRecordPayload(payloadData.ToArray());
 
             // Seek past the double breaks at the end of the payload and discard.
-            var recordEnd = result.Buffer.GetPosition(4, payloadEnd);
-            pipeReader.AdvanceTo(recordEnd, result.Buffer.End);
+            var recordEnd = result.Buffer.GetPosition(4, payloadData.End);
+            pipeReader.AdvanceTo(recordEnd);
 
             // We have our record now.
             return new WarcRecord(header, payload);
